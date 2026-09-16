@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowUpRight, Check, CircleHelp } from "lucide-react";
+import { ArrowUpRight, Check } from "lucide-react";
 
 import baba from "@/assets/baba.webp.asset.json";
 import chalan from "@/assets/chalan.webp.asset.json";
