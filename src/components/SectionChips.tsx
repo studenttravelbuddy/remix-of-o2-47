@@ -1,9 +1,9 @@
 const chips = [
-  { href: "#maxx", label: "O2 Maxx" },
-  { href: "#pausaly", label: "O2 Paušály" },
-  { href: "#junior", label: "O2 Junior" },
-  { href: "#preukazy", label: "Preukazy" },
-  { href: "#prechod", label: "Ako prejsť" },
+  { href: "#pribeh", label: "Náš príbeh" },
+  { href: "#benefity", label: "O2 Maxx" },
+  { href: "#spolu", label: "O2 Spolu" },
+  { href: "#pre-koho", label: "Pre koho" },
+  { href: "#media", label: "Médiá" },
   { href: "#faq", label: "FAQ" },
 ];
 

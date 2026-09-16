@@ -1,4 +1,3 @@
-import type { ReactNode } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -6,289 +5,26 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-type FaqItem = { q: string; a: ReactNode };
-
-const groups: { id: string; label: string; items: FaqItem[] }[] = [
+const items = [
   {
-    id: "vseobecne",
-    label: "Nová spolupráca",
-    items: [
-      {
-        q: "Prečo už medzi výhodami ISIC / ITIC / EURO<26 nevidím ponuku Orange?",
-        a: "Po 15 rokoch spolupráce so spoločnosťou Orange sme sa rozhodli posunúť ponuku telekomunikačných benefitov ďalej. S cieľom prinášať držiteľom našich preukazov čo najatraktívnejšie a aktuálne výhody sme spoluprácu s Orange ukončili k 31. 8. 2026. Od 1. 9. 2026 prinášame novú ponuku paušálov v spolupráci s O2.",
-      },
-      {
-        q: "Čo sa mení od 1. septembra 2026?",
-        a: "Od 1. 9. 2026 je pre držiteľov preukazov dostupná nová ponuka paušálov od O2. Je pripravená tak, aby ju mohli využiť všetky skupiny držiteľov ISIC, ITIC a EURO<26 a každý držiteľ si v nej našiel to svoje. Jej súčasťou je aj úplne nový paušál O2 Maxx ktorý je len pre držiteľov a nižšie ceny/rozšírená ponuka na paušál O2 Junior a ostatné O2 Paušály.",
-      },
-      {
-        q: "Čo ponúka O2 Maxx?",
-        a: (
-          <>
-            O2 Maxx zahŕňa 100 GB dát plnou rýchlosťou, prenos nespotrebovaných dát, neobmedzené volania a správy v celej EÚ a 12-mesačné predplatné vybranej digitálnej služby (Netflix, Voyo, HBO max a iné..) ktorú môžete každý mesiac meniť. Podrobné informácie a zmluvné podmienky nájdete na stránke{" "}
-            <a
-              href="https://www.o2.sk"
-              className="font-bold text-foreground underline decoration-brand-pink decoration-2 underline-offset-4"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              www.o2.sk
-            </a>
-          </>
-        ),
-      },
-      {
-        q: "Pre koho je určený O2 Maxx a zvýhodnené ponuky na O2 Junior a iné O2 Paušály?",
-        a: "Pre všetkých držiteľov platných preukazov ISIC, ITIC a EURO<26, ktoré boli vydané na Slovensku.",
-      },
-      {
-        q: "Kde si môžem novú ponuku pozrieť?",
-        a: (
-          <>
-            Kompletné podmienky, možnosti aktivácie a aktuálnu ponuku nájdete na stránkach{" "}
-            <a
-              href="https://www.o2.sk/ponuka/mobilne-sluzby/o2-maxx"
-              className="font-bold text-foreground underline decoration-brand-pink decoration-2 underline-offset-4"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              O2 Maxx
-            </a>
-            ,{" "}
-            <a
-              href="https://www.o2.sk/ponuka/mobilne-sluzby/o2-junior"
-              className="font-bold text-foreground underline decoration-brand-pink decoration-2 underline-offset-4"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              O2 Junior
-            </a>{" "}
-            a{" "}
-            <a
-              href="https://www.o2.sk/mobilne-sluzby/o2-pausal-preukaz"
-              className="font-bold text-foreground underline decoration-brand-pink decoration-2 underline-offset-4"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              zvýhodnené O2 Paušály
-            </a>
-            .
-          </>
-        ),
-      },
-      {
-        q: "Mám paušál Yoxo. Čo sa s ním stane?",
-        a: (
-          <>
-            Yoxo môžete využívať do konca platnosti vašej aktuálnej zmluvy v Orange a následne si môžete vybrať ktorýkoľvek z paušálov v O2 pripravených pre ISIC, ITIC a EURO&lt;26. Zmluvu v Orange môžete ukončiť aj hneď a prejsť na výhodnejší paušál v O2. Viac podrobných informácií o nových paušáloch nájdete na stránke{" "}
-            <a
-              href="https://www.o2.sk/ponuka/mobilne-sluzby/o2-maxx"
-              className="font-bold text-foreground underline decoration-brand-pink decoration-2 underline-offset-4"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              www.o2.sk
-            </a>
-          </>
-        ),
-      },
-
-      {
-        q: "Môžem si ešte aktivovať Yoxo cez ISIC / ITIC / EURO<26?",
-        a: "Od 1. 9. 2026 si môžete nové paušály na ISIC, ITIC a EURO<26 aktivovať len v O2.",
-      },
-      {
-        q: "Som zákazníkom Orange. Prestáva mi platiť paušál na ISIC / ITIC / EURO<26?",
-        a: (
-          <>
-            Zvýhodnenie na preukaz v Orange platí do konca platnosti vašej aktuálnej zmluvy. Následne si môžete vybrať ktorýkoľvek z paušálov v O2 pripravených pre ISIC, ITIC a EURO&lt;26. Zmluvu v Orange môžete ukončiť aj hneď a prejsť na výhodnejší paušál v O2. Viac podrobných informácií o nových paušáloch nájdete na stránke{" "}
-            <a
-              href="https://www.o2.sk/ponuka/mobilne-sluzby/o2-maxx"
-              className="font-bold text-foreground underline decoration-brand-pink decoration-2 underline-offset-4"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              www.o2.sk
-            </a>
-          </>
-        ),
-      },
-      {
-        q: "Prečo ste sa rozhodli spolupracovať s O2?",
-        a: "S O2 sme sa dohodli na dlhodobej spolupráci, vďaka ktorej budeme spoločne tvoriť a ponúkať držiteľom preukazov ISIC/ITIC/EURO<26 také paušály, ktoré budú maximálne prispôsobované potrebám a požiadavkám držiteľov ISIC, ITIC a EURO<26.",
-      },
-      {
-        q: "Čo znamená nová spolupráca pre môj preukaz?",
-        a: "Nič nemusíš riešiť. Preukaz ISIC, ITIC alebo EURO<26 platí ďalej presne tak, ako doteraz — len k nemu pribudli nové telekomunikačné výhody.",
-      },
-      {
-        q: "Musím prejsť k novému operátorovi?",
-        a: "Ak chceš využívať nový paušál na svoj preukaz, tak áno.",
-      },
-      {
-        q: "Ako môžem získať preukaz ISIC, ITIC alebo EURO<26?",
-        a: (
-          <>
-            Preukazy si objednáš podľa podmienok dodávateľov na{" "}
-            <a
-              href="https://isic.sk"
-              className="font-bold text-foreground underline decoration-brand-pink decoration-2 underline-offset-4"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              isic.sk
-            </a>
-            ,{" "}
-            <a
-              href="https://itic.sk"
-              className="font-bold text-foreground underline decoration-brand-pink decoration-2 underline-offset-4"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              itic.sk
-            </a>{" "}
-            a{" "}
-            <a
-              href="https://euro26.sk"
-              className="font-bold text-foreground underline decoration-brand-pink decoration-2 underline-offset-4"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              euro26.sk
-            </a>
-            . Platnosť preukazu si vieš jednoducho overiť online.
-          </>
-        ),
-      },
-      {
-        q: "Môžem mať viac paušálov so zľavou?",
-        a: "Jedna osoba môže mať jeden produkt so zľavou na jeden preukaz. Rodič môže aktivovať toľko programov, koľko má detí — pri aktivácii každého programu však treba použiť priezvisko a platný preukaz daného dieťaťa, pre ktoré program aktivuje.",
-      },
-    ],
+    q: "Ako dlho platí ponuka?",
+    a: "Ponuka O2 Maxx odštartovala 1. septembra 2026. Aktuálne podmienky a možnosti aktivácie nájdeš na oficiálnej stránke O2 Maxx.",
   },
   {
-    id: "maxx",
-    label: "O2 Maxx",
-    items: [
-      {
-        q: "Kto si môže aktivovať paušál so 100 GB?",
-        a: "Všetci držitelia platných preukazov ISIC, ITIC alebo EURO<26 vydaných na Slovensku. Paušál si môže aktivovať každý držiteľ preukazu od 18 rokov. Pre neplnoleté dieťa ho kupuje rodič alebo iný zákonný zástupca na svoje meno a pri overovaní zadá priezvisko dieťaťa a číslo jeho platného preukazu.",
-      },
-      {
-        q: "Čo ak neminiem svojich 100 GB dát?",
-        a: "Nevyčerpané dáta sa prenášajú do ďalšieho mesiaca. Ak si tento mesiac minul len 50 GB, ďalší mesiac máš k dispozícii 150 GB.",
-      },
-      {
-        q: "Čo sa stane, ak 100 GB prečerpám?",
-        a: "Dáta využívaš ďalej spomalenou rýchlosťou 2 Mbit/s pri sťahovaní a 1 Mbit/s pri odosielaní. Nič navyše sa neúčtuje.",
-      },
-      {
-        q: "Sú volania a správy naozaj neobmedzené?",
-        a: "Áno — neobmedzené minúty a neobmedzené SMS/MMS do všetkých sietí na Slovensku aj v celej EÚ.",
-      },
-      {
-        q: "Funguje paušál aj v zahraničí?",
-        a: "Áno. V EÚ, Nórsku, Lichtenštajnsku, na Islande, Gibraltári a vo Veľkej Británii voláš a píšeš ako doma a čerpáš dáta do výšky EÚ dátového limitu bez príplatku.",
-      },
-      {
-        q: "Ako funguje predplatné v cene?",
-        a: "V cene paušálu máš 1 predplatné na 12 mesiacov od aktivácie — video-streaming alebo spravodajské služby. Vymeniť ho môžeš každých 30 dní alebo kedykoľvek zrušiť. Po 12 mesiacoch sa spoplatňuje podľa cenníka.",
-      },
-      {
-        q: "Je paušál s viazanosťou? Čo ak stratím status študenta?",
-        a: (
-          <>
-            Paušál je úplne bez viazanosti. Ak preukaz stratí platnosť, upozorníme ťa a paušál beží do najbližšieho zúčtovacieho obdobia. Ak ho dovtedy neobnovíš, program sa zmení na{" "}
-            <a
-              href="https://www.o2.sk/ponuka/mobilne-sluzby/o2-fer"
-              className="font-bold text-foreground underline decoration-brand-pink decoration-2 underline-offset-4"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              O2 Fér
-            </a>
-            .
-          </>
-        ),
-      },
-    ],
+    q: "Čo ak mi preukaz stratí platnosť?",
+    a: "Tarif je určený pre držiteľov platného preukazu ISIC, ITIC alebo EURO<26. Ak preukaz stratí platnosť, tarif sa po skončení fakturačného obdobia zmení na O2 Fér.",
   },
   {
-    id: "pausaly",
-    label: "O2 Paušály",
-    items: [
-      {
-        q: "Majú paušály viazanosť?",
-        a: "Nie. Všetky paušály môžeš využívať so všetkými výhodami úplne bez viazanosti.",
-      },
-      {
-        q: "Ako funguje bonus s preukazom ISIC, ITIC a EURO<26?",
-        a: "Bonus získa každý držiteľ platného preukazu — po overení preukazu platíš zvýhodnenú cenu O2 Paušálu (Základný 18 € namiesto 22 €, Pohodový 28 € namiesto 33 €, Bezstarostný 38 € namiesto 44 €).",
-      },
-      {
-        q: "Čo je Cashback?",
-        a: "S Bezstarostným O2 Paušálom ti O2 vráti 5 € späť, ak si mal paušál aktívny celý mesiac a neminul viac ako 15 GB dát. Automaticky.",
-      },
-      {
-        q: "Ako funguje bonus na zariadenie s preukazom?",
-        a: "Je to bonus, ktorý si uplatníš pri kúpe zariadenia k O2 Paušálu: so Základným 48 €, s Pohodovým 96 € a s Bezstarostným 168 €.",
-      },
-      {
-        q: "Je predplatné aj so Základným O2 Paušálom?",
-        a: "S Pohodovým a Bezstarostným O2 Paušálom máš jedno predplatné v cene. So Základným O2 Paušálom si predplatné môžeš dokúpiť za zvýhodnenú alebo bežnú cenu.",
-      },
-      {
-        q: "Ako funguje vykúpenie z viazanosti?",
-        a: "Pri prenose čísla do O2 ti O2 preplatí zmluvnú pokutu u pôvodného operátora až do výšky 120 €. V košíku označíš možnosť preplatiť zmluvnú pokutu a keď ti pôvodný operátor doručí záverečnú faktúru, pošleš ju O2.",
-      },
-      {
-        q: "Koľko zaplatím po prevolaní predplatených minút?",
-        a: "So Základným O2 Paušálom 10 centov za minútu; neobmedzené volania si k nemu môžeš doaktivovať za 5,13 € mesačne. Pohodový a Bezstarostný O2 Paušál majú neobmedzené volania, SMS a MMS do všetkých sietí v EÚ v cene.",
-      },
-    ],
+    q: "Ako funguje O2 Spolu?",
+    a: "Čím viac ľudí sa dá dokopy, tým výhodnejšie to je pre skupinu. Dvaja získajú 10 GB dátovú rezervu navyše, pri troch sa skupinová odmena 5 € mesačne rozdelí medzi troch a pri štyroch alebo viacerých sa odmena 10 € mesačne rozdelí medzi členov skupiny.",
   },
   {
-    id: "junior",
-    label: "O2 Junior",
-    items: [
-      {
-        q: "Kedy si môžem aktivovať Junior?",
-        a: "Junior je viazaný na hlavný paušál — podmienkou je aspoň jeden aktívny paušál na rovnakom zákazníckom profile (na rovnakej faktúre). Pridáš ho k existujúcemu účtu alebo si oboje kúpiš v jednej objednávke.",
-      },
-      {
-        q: "Môžem si Junior kúpiť samostatne?",
-        a: "Nie. Junior funguje len v kombinácii s hlavným paušálom na tom istom zákazníckom profile.",
-      },
-      {
-        q: "Ako získam Junior s bonusom preukazu?",
-        a: "S platným ISIC, ITIC alebo EURO<26 sa základný objem dát navýši zo 4 GB na 10 GB a z 3 voľných čísel s neobmedzeným volaním a SMS na 5 čísel. Cena zostáva 10,25 €/mes.",
-      },
-      {
-        q: "Ako funguje „Donekonečna piatim“?",
-        a: "Nastavíš až 5 telefónnych čísel (s preukazom), na ktoré dieťa volá a píše neobmedzene v cene mesačného poplatku. Čísla je možné zmeniť raz za zúčtovacie obdobie v aplikácii.",
-      },
-      {
-        q: "Ako funguje limit na volania, správy a dáta navyše?",
-        a: "Rodič nastaví maximálnu sumu, ktorú môže dieťa použiť nad rámec programu. Platí sa len za skutočne prevolané minúty, správy a začaté gigabajty. Tiesňové linky sú vždy dostupné. Limit sa mení raz za zúčtovacie obdobie.",
-      },
-      {
-        q: "Čo sa stane s Juniorom, ak už nemám hlavný paušál?",
-        a: (
-          <>
-            Program sa automaticky zmení na{" "}
-            <a
-              href="https://www.o2.sk/ponuka/mobilne-sluzby/o2-fer"
-              className="font-bold text-foreground underline decoration-brand-pink decoration-2 underline-offset-4"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              O2 Fér na faktúru
-            </a>
-            . Späť na Junior sa dá vrátiť, keď bude opäť splnená podmienka aktívneho hlavného paušálu na rovnakom fakturačnom profile.
-          </>
-        ),
-      },
-    ],
+    q: "Čo presne dostanem pri predplatnom — môžem si službu meniť?",
+    a: "K tarifu O2 Maxx dostaneš na 12 mesiacov predplatné jednej zo služieb Netflix, Voyo, HBO Max, O2 TV alebo Refresher. Voľbu môžeš meniť každý mesiac a cena tarifu ostáva 20 €.",
+  },
+  {
+    q: "Dá sa kombinovať s inou tarifou?",
+    a: "O2 Maxx môžeš spojiť s ďalšími ľuďmi cez O2 Spolu. Pri štyroch a viac ľuďoch klesne cena O2 Maxx až na 17,50 € mesačne.",
   },
 ];
 
@@ -296,21 +32,16 @@ export function CampaignFaq() {
   return (
     <section id="faq" className="scroll-mt-24 bg-background py-12 sm:py-20">
       <div className="mx-auto max-w-4xl px-5 sm:px-8">
-        <p className="eyebrow text-brand-pink">FAQ</p>
+        <p className="eyebrow text-brand-pink">07 — FAQ</p>
         <h2 className="mt-2 font-display text-3xl font-black sm:text-5xl">
           Pýtaš sa?
           <br />
           Odpovedáme.
         </h2>
 
-        <div className="mt-8 space-y-10 sm:mt-12 sm:space-y-12">
-          {groups.map((group) => (
-            <div key={group.id}>
-              <h3 className="inline-block rounded-full bg-brand-yellow px-4 py-1.5 font-display text-sm font-black uppercase tracking-wider shadow-soft-yellow">
-                {group.label}
-              </h3>
-              <Accordion type="single" collapsible className="mt-4">
-                {group.items.map((item) => (
+        <div className="mt-8 sm:mt-12">
+              <Accordion type="single" collapsible>
+                {items.map((item) => (
                   <AccordionItem
                     key={item.q}
                     value={item.q}
@@ -325,13 +56,11 @@ export function CampaignFaq() {
                   </AccordionItem>
                 ))}
               </Accordion>
-            </div>
-          ))}
-
+              </Accordion>
         </div>
 
         <p className="mt-10 rounded-2xl bg-brand-teal-light p-5 text-sm">
-          Nenašiel si odpoveď?{" "}
+          Nenašiel/-la si odpoveď?{" "}
           <a
             href="mailto:info@ckm.sk"
             className="font-bold text-foreground underline decoration-brand-pink decoration-2 underline-offset-4"
