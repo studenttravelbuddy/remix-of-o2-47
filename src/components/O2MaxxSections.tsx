@@ -17,7 +17,7 @@ const SPOLU_LINK = "https://www.o2.sk/spolu";
 
 const coreBenefits = [
   "100 GB dát v 5G v plnej rýchlosti každý mesiac",
-  "Nevyužité dáta sa prenesú — až 180 GB v ďalšom mesiaci",
+  "Nevyužité dáta sa prenesú — až 80 GB do ďalšieho mesiaca",
   "Po vyčerpaní dát sa internet nevypne, iba spomalí",
   "Neobmedzené volania a SMS/MMS na Slovensku aj v EÚ",
   "Roaming v EÚ vrátane Nórska, Islandu, Lichtenštajnska a Gibraltáru",
@@ -51,7 +51,7 @@ const tiers = [
     people: "3 osoby",
     task: "Spojte 3 programy do jednej skupiny O2 Spolu.",
     extras: ["Odmena 5 € mesačne rozdelená rovnomerne medzi troch", "Dátová rezerva 20 GB pre skupinu + 1 GB dát v Zóne 2"],
-    highlights: ["− 1,70 € mesačne oproti 20 €", "Odmena 5 € mesačne pre skupinu"],
+    highlights: ["− 1,70 € mesačne/člen oproti 20 €", "Odmena 5 € mesačne pre skupinu"],
     color: "bg-brand-yellow text-foreground",
   },
   {
@@ -60,7 +60,7 @@ const tiers = [
     people: "4 osoby",
     task: "Spojte 4 programy do jednej skupiny O2 Spolu — najvýhodnejšia cena.",
     extras: ["Odmena 10 € mesačne rozdelená rovnomerne medzi štyroch", "Dátová rezerva 30 GB pre skupinu + 1 GB dát v Zóne 2"],
-    highlights: ["− 2,50 € mesačne oproti 20 €", "Odmena 10 € mesačne pre skupinu"],
+    highlights: ["− 2,50 € mesačne/člen oproti 20 €", "Odmena 10 € mesačne pre skupinu"],
     color: "bg-brand-teal-deep text-primary-foreground",
   },
 ];
@@ -218,9 +218,9 @@ export function WhyMaxxSection() {
 export function TogetherSection() {
   const levels = [
     ["1 osoba", "20 €", "samostatne, bez skupiny"],
-    ["2 osoby", "20 €", "dátová rezerva 10 GB + 1 GB v Zóne 2"],
-    ["3 osoby", "cca 18,30 €", "odmena 5 € rozdelená rovnomerne medzi troch + rezerva 20 GB"],
-    ["4 osoby", "17,50 €", "odmena 10 € rozdelená rovnomerne medzi štyroch + rezerva 30 GB"],
+    ["2 osoby", "20 €/osoba", "dátová rezerva 10 GB + 1 GB v Zóne 2"],
+    ["3 osoby", "cca 18,30 €/osoba", "odmena 5 € rozdelená rovnomerne medzi troch + rezerva 20 GB"],
+    ["4 osoby", "17,50 €/osoba", "odmena 10 € rozdelená rovnomerne medzi štyroch + rezerva 30 GB"],
   ];
   return (
     <section id="spolu" className="scroll-mt-20 overflow-hidden bg-background py-14 sm:py-24">
@@ -249,7 +249,7 @@ export function TogetherSection() {
               <ul className="mt-3 grid gap-2 text-sm font-medium">
                 <li>2 programy v skupine: dátová rezerva 10 GB + 1 GB dát v Zóne 2</li>
                 <li>3 programy v skupine: odmena 5 € + rezerva 20 GB + 1 GB dát v Zóne 2</li>
-                <li>4 a viac programov: odmena 10 € + rezerva 30 GB + 1 GB dát v Zóne 2</li>
+                <li>4 programy v skupine: odmena 10 € + rezerva 30 GB + 1 GB dát v Zóne 2</li>
               </ul>
               <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
                 Odmenu získa skupina vtedy, ak sa počas celého zúčtovacieho obdobia zakladateľa nezmení počet členov skupiny. Vypláca sa cez O2 Aplikáciu na účet alebo ako poukážka do e-shopu či O2 Predajne. Ceny 18,30 € a 17,50 € vznikajú rozdelením odmeny rovnomerne medzi členov skupiny.
