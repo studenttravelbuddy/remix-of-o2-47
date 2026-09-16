@@ -118,14 +118,13 @@ export function BenefitsSection() {
     <section id="benefity" className="scroll-mt-20 overflow-hidden bg-background py-14 sm:py-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div className="text-center">
-          <p className="eyebrow text-brand-pink">02 — Toto máš v O2 Maxx</p>
+          <p className="font-sans text-3xl font-black uppercase tracking-tight text-foreground sm:text-5xl">O2 MAXX</p>
           <h2 className="mx-auto mt-3 max-w-4xl font-sans text-3xl font-black leading-tight sm:text-6xl">
             Celý balík výhod pre držiteľov{" "}
             <span className="text-brand-teal">ISIC, ITIC a EURO&lt;26</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base sm:text-lg">
-            Začíname na 17,50 € mesačne. Klikni na cenu a uvidíš, čo pre ňu treba urobiť
-            a čo všetko v paušále máš.
+            Začíname na 17,50 € mesačne. Klikni na cenu a ukážu sa ti benefity.
           </p>
         </div>
 
