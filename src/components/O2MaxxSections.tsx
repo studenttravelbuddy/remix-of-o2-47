@@ -256,7 +256,7 @@ export function AudienceSection() {
         <h2 className="mt-3 font-sans text-4xl font-black sm:text-6xl">Jeden paušál.<br />Rôzne životy.</h2>
         <div className="no-scrollbar -mx-5 mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:px-0">
           {audiences.map((item, i) => (
-            <article key={item.label} className={`relative min-h-[520px] w-[82%] shrink-0 snap-center overflow-hidden rounded-xl ${item.color} lg:w-auto ${i % 2 === 1 ? "lg:translate-y-8" : ""}`}>
+            <article key={item.label} className={`relative flex min-h-[620px] w-[82%] shrink-0 snap-center flex-col overflow-hidden rounded-xl ${item.color} lg:w-auto ${i % 2 === 1 ? "lg:translate-y-8" : ""}`}>
               <div className="relative z-20 p-6">
                 <p className="eyebrow">{item.label}</p>
                 <h3 className="mt-1 text-2xl font-black">{item.title}</h3>
