@@ -100,11 +100,11 @@ function Index() {
         </div>
       </section>
 
-      <PressGallery />
       <BenefitsSection />
       <WhyMaxxSection />
       <TogetherSection />
       <AudienceSection />
+      <PressGallery />
       <MediaSection />
       <CampaignFaq />
 
