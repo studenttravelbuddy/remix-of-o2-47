@@ -23,7 +23,8 @@ const items: { q: string; a: string; link?: string }[] = [
   },
   {
     q: "Dá sa kombinovať s inou tarifou?",
-    a: "O2 Maxx môžeš spojiť s ďalšími ľuďmi cez O2 Spolu. Pri štyroch a viac ľuďoch klesne cena O2 Maxx až na 17,50 € mesačne.",
+    a: "O2 Maxx môžeš spojiť s ďalšími ľuďmi cez O2 Spolu. Pri štyroch ľuďoch v skupine môže cena O2 Maxx klesnúť na 17,50 € mesačne, ak je odmena 10 € rozdelená rovnomerne medzi 4 členov skupiny.",
+    link: SPOLU_LINK,
   },
 ];
 
