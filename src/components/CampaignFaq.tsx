@@ -56,7 +56,6 @@ export function CampaignFaq() {
                   </AccordionItem>
                 ))}
               </Accordion>
-              </Accordion>
         </div>
 
         <p className="mt-10 rounded-2xl bg-brand-teal-light p-5 text-sm">
