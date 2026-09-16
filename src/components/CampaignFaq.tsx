@@ -5,7 +5,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const items = [
+const SPOLU_LINK = "https://www.o2.sk/spolu";
+
+const items: { q: string; a: string; link?: string }[] = [
   {
     q: "Ako dlho platí ponuka?",
     a: "Ponuka O2 Maxx platí od 1. septembra 2026 a trvá, kým máš platný preukaz ISIC, ITIC alebo EURO<26. Ak preukaz stratí platnosť, tarif sa po skončení fakturačného obdobia zmení na O2 Fér.",
