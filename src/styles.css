@@ -69,7 +69,7 @@
   --brand-yellow: #ffc805;
   --brand-orange: #ff7314;
   --brand-orange-dark: #8c2f0d;
-  --brand-pink: #ec0578;
+  --brand-pink: #eb0578;
   --brand-pink-dark: #a80355;
   --brand-gray: #6e6e6e;
 
@@ -103,7 +103,7 @@
   --sidebar-border: #d5e9e9;
   --sidebar-ring: var(--brand-teal);
 
-  --font-display-stack: "Roboto Slab", ui-serif, Georgia, serif;
+  --font-display-stack: "Roboto", ui-sans-serif, system-ui, sans-serif;
   --font-sans-stack: "Roboto", ui-sans-serif, system-ui, sans-serif;
 }
 
@@ -200,6 +200,17 @@
 /* Safe-area padding pre fixnú spodnú lištu */
 @utility safe-bottom {
   padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+}
+
+@utility offer-pill {
+  display: inline-flex;
+  min-height: 2.5rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 @utility community-person {
