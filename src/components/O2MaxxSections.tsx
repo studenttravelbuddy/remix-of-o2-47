@@ -204,7 +204,7 @@ export function BenefitsSection() {
 export function WhyMaxxSection() {
   const reasons = ["Voláš a píšeš komukoľvek bez počítania kontaktov.", "Ročné predplatné je priamo v cene.", "Nevyužité dáta sa prenesú do ďalšieho mesiaca.", "Internet funguje ďalej aj po minutí 100 GB."];
   return (
-    <section className="bg-brand-teal py-14 sm:py-20"><div className="mx-auto max-w-6xl px-5 sm:px-8"><p className="eyebrow">03 — Bez zbytočného počítania</p><div className="mt-6 grid gap-x-12 gap-y-8 md:grid-cols-2">{reasons.map((reason, i) => <div key={reason} className="flex items-start gap-4 border-t-2 border-foreground pt-4"><span className="text-4xl font-black text-brand-yellow">0{i + 1}</span><p className="max-w-sm pt-2 text-lg font-bold">{reason}</p></div>)}</div></div></section>
+    <section className="bg-brand-teal-light py-14 sm:py-20"><div className="mx-auto max-w-6xl px-5 sm:px-8"><p className="eyebrow">Bez zbytočného počítania</p><div className="mt-6 grid gap-x-12 gap-y-6 md:grid-cols-2">{reasons.map((reason) => <div key={reason} className="flex items-start gap-3 border-t-2 border-foreground/20 pt-4"><Check className="mt-1 h-5 w-5 shrink-0 text-brand-teal-deep" aria-hidden="true" /><p className="max-w-sm text-base font-bold sm:text-lg">{reason}</p></div>)}</div></div></section>
   );
 }
 
