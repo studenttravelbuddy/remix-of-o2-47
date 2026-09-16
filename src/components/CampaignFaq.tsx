@@ -14,7 +14,7 @@ const items: { q: string; a: string; link?: string }[] = [
   },
   {
     q: "Ako funguje O2 Spolu?",
-    a: "Čím viac programov spojíte do skupiny, tým viac skupina dostane. Pri 2 programoch je to dátová rezerva 10 GB a 1 GB dát v Zóne 2, pri 3 programoch odmena 5 € mesačne a rezerva 20 GB, pri 4 a viac programoch odmena 10 € mesačne a rezerva 30 GB. Odmenu získa skupina vtedy, ak sa počas celého zúčtovacieho obdobia zakladateľa nezmení počet členov skupiny, a vypláca sa cez O2 Aplikáciu na účet alebo ako poukážka.",
+    a: "Čím viac programov spojíte do skupiny, tým viac skupina dostane. Pri 2 programoch je to dátová rezerva 10 GB a 1 GB dát v Zóne 2, pri 3 programoch odmena 5 € mesačne a rezerva 20 GB, pri 4 programoch odmena 10 € mesačne a rezerva 30 GB. Odmenu získa skupina vtedy, ak sa počas celého zúčtovacieho obdobia zakladateľa nezmení počet členov skupiny, a vypláca sa cez O2 Aplikáciu na účet alebo ako poukážka.",
     link: SPOLU_LINK,
   },
   {
