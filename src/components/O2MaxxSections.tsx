@@ -33,7 +33,7 @@ const tiers = [
     task: "Aktivuj si O2 Maxx na svoj platný preukaz ISIC, ITIC alebo EURO<26.",
     extras: [],
     highlights: ["Základná cena 20 € mesačne"],
-    color: "border-brand-teal",
+    color: "bg-brand-teal text-foreground",
   },
   {
     id: "duo",
@@ -42,7 +42,7 @@ const tiers = [
     task: "Spoj sa s jedným človekom v O2 Spolu.",
     extras: ["10 GB dátová rezerva navyše pre skupinu"],
     highlights: ["Rovnaká cena 20 €", "+ 10 GB dátová rezerva navyše"],
-    color: "border-brand-teal-deep",
+    color: "bg-brand-teal-deep text-primary-foreground",
   },
   {
     id: "trio",
@@ -51,7 +51,7 @@ const tiers = [
     task: "Pridajte sa traja do jednej skupiny O2 Spolu.",
     extras: ["Skupinová odmena 5 € mesačne rozdelená medzi troch"],
     highlights: ["− 1,70 € mesačne oproti 20 €", "Skupinová odmena 5 € mesačne"],
-    color: "border-brand-yellow",
+    color: "bg-brand-yellow text-foreground",
   },
   {
     id: "quad",
@@ -60,7 +60,7 @@ const tiers = [
     task: "Dajte sa dokopy štyria alebo viacerí — najvýhodnejšia cena.",
     extras: ["Skupinová odmena 10 € mesačne rozdelená medzi členov skupiny"],
     highlights: ["− 2,50 € mesačne oproti 20 €", "Skupinová odmena 10 € mesačne"],
-    color: "border-brand-isic",
+    color: "bg-brand-teal-deep text-primary-foreground",
   },
 ];
 
@@ -141,9 +141,9 @@ export function BenefitsSection() {
                   type="button"
                   aria-pressed={selected}
                   onClick={() => setActive(index)}
-                  className={`relative flex-1 rounded-xl border-2 bg-background px-3 pb-4 pt-3 text-left transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${selected ? `${item.color} shadow-soft-teal` : "border-border hover:-translate-y-0.5"}`}
+                  className={`relative flex-1 rounded-xl px-3 pb-4 pt-3 text-left transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${selected ? `${item.color} shadow-soft-teal` : "bg-brand-highlight text-foreground hover:-translate-y-0.5"}`}
                 >
-                  <span className={`block h-4 w-4 rounded-full border-4 ${selected ? "border-foreground bg-background" : "border-border bg-background"}`} />
+                  <span className={`block h-4 w-4 rounded-full border-4 bg-background ${selected ? "border-foreground" : "border-brand-teal"}`} />
                   <span className="mt-3 block text-2xl font-black leading-none sm:text-3xl">{item.price}</span>
                   <span className="mt-1 block text-xs font-bold">{item.people}</span>
                 </button>
@@ -154,7 +154,7 @@ export function BenefitsSection() {
 
         <div className="mt-8 grid items-start gap-8 lg:grid-cols-[.9fr_1.1fr]">
           <div className="mx-auto w-full max-w-[280px]">
-            <div className="relative flex h-[440px] flex-col overflow-hidden rounded-[2.75rem] border-[10px] border-foreground bg-brand-teal-light shadow-soft-teal sm:h-[520px]">
+            <div className="relative flex h-[440px] flex-col overflow-hidden rounded-[2.75rem] border-[10px] border-foreground bg-brand-teal shadow-soft-teal sm:h-[520px]">
               <div className="mx-auto h-6 w-24 rounded-b-2xl bg-foreground" />
               <div className="flex flex-1 flex-col items-center justify-center px-5 text-center">
                 <p className="eyebrow">O2 Maxx</p>
@@ -171,7 +171,7 @@ export function BenefitsSection() {
           </div>
 
           <div>
-            <div className={`rounded-xl border-2 bg-background px-5 py-4 ${tier.color}`}>
+            <div className={`rounded-xl px-5 py-4 ${tier.color}`}>
               <p className="text-sm font-black uppercase tracking-wide">Čo pre to treba urobiť</p>
               <p className="mt-1 text-base font-bold">{tier.task}</p>
             </div>
@@ -179,7 +179,7 @@ export function BenefitsSection() {
               {tier.highlights.map((highlight, i) => (
                 <span
                   key={highlight}
-                  className={`rounded-full border-2 bg-background px-4 py-2 text-sm font-black ${i === 0 ? "border-brand-isic text-brand-isic" : "border-brand-yellow text-foreground"}`}
+                  className={`rounded-full px-4 py-2 text-sm font-black text-foreground ${i === 0 ? "bg-brand-yellow" : "bg-brand-highlight"}`}
                 >
                   {highlight}
                 </span>
