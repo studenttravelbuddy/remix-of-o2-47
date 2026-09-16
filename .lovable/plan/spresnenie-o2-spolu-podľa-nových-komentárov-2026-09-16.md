@@ -16,13 +16,16 @@ V prehľade úrovní nahradím „1× / 2× / 3× / 4×“ zrozumiteľným pomen
 
 Podľa oficiálnej stránky o2.sk/spolu doplním do sekcie O2 Spolu krátky, jasný prehľad, čo skupina kedy dostane:
 
-| Skupina | Čo získa každý mesiac |
-| --- | --- |
-| 2 programy (úroveň 1) | dátová rezerva 10 GB + 1 GB v Zóne 2 |
-| 3 programy (úroveň 2) | odmena 5 € + rezerva 20 GB + 1 GB v Zóne 2 |
+
+| Skupina                       | Čo získa každý mesiac                       |
+| ----------------------------- | ------------------------------------------- |
+| 2 programy (úroveň 1)         | dátová rezerva 10 GB + 1 GB v Zóne 2        |
+| 3 programy (úroveň 2)         | odmena 5 € + rezerva 20 GB + 1 GB v Zóne 2  |
 | 4 a viac programov (úroveň 3) | odmena 10 € + rezerva 30 GB + 1 GB v Zóne 2 |
 
+
 Pod tabuľkou doplním podmienky:
+
 - odmenu získa skupina, ak sa počas celého zúčtovacieho obdobia zakladateľa nezmení počet členov skupiny,
 - odmena sa vypláca cez O2 Aplikáciu na účet alebo ako poukážka do e-shopu či predajne,
 - ceny 18,30 € a 17,50 € vznikajú rozdelením odmeny rovnomerne medzi členov skupiny,
@@ -30,7 +33,7 @@ Pod tabuľkou doplním podmienky:
 
 ## 4. Cena pri štyroch (vlákno 23a57077)
 
-Vo FAQ aj v cenovej osi zjednotím znenie: **„Pri štyroch ľuďoch v skupine môže cena O2 Maxx klesnúť na 17,50 € mesačne.“**
+Vo FAQ aj v cenovej osi zjednotím znenie: **„Pri štyroch ľuďoch v skupine môže cena O2 Maxx klesnúť na 17,50 € mesačne ak je odmena 10 € rozdelená rovnomerne medzi 4 členov skupiny.“ [https://www.o2.sk/spolu](https://www.o2.sk/spolu)**
 
 ## Technické detaily
 
