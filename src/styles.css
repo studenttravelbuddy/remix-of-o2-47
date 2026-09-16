@@ -81,7 +81,7 @@
   --card-foreground: #000000;
   --card-accent: var(--brand-teal-deep);
   --popover: #ffffff;
-  --popover-foreground: #143333;
+  --popover-foreground: #000000;
   --primary: var(--brand-teal-deep);
   --primary-foreground: #ffffff;
   --secondary: var(--brand-teal-light);
@@ -89,7 +89,7 @@
   --muted: #f2f9f9;
   --muted-foreground: #587373;
   --accent: var(--brand-teal);
-  --accent-foreground: #143333;
+  --accent-foreground: #000000;
   --destructive: #ec0578;
   --destructive-foreground: #ffffff;
   --border: #d5e9e9;
@@ -97,11 +97,11 @@
   --ring: var(--brand-teal);
 
   --sidebar: #ffffff;
-  --sidebar-foreground: #143333;
+  --sidebar-foreground: #000000;
   --sidebar-primary: var(--brand-teal-deep);
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: var(--brand-teal-light);
-  --sidebar-accent-foreground: #143333;
+  --sidebar-accent-foreground: #000000;
   --sidebar-border: #d5e9e9;
   --sidebar-ring: var(--brand-teal);
 
