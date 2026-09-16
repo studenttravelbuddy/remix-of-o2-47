@@ -1,8 +1,5 @@
-import { useState } from "react";
 import {
   ArrowUpRight,
-  Check,
-  ChevronDown,
   CircleHelp,
   Globe2,
   MessageCircleMore,

@@ -6,4 +6,4 @@
 - [x] Pridať sekcie Prečo O2 Maxx, O2 Spolu a cieľové skupiny
 - [x] Pridať presne deväť mediálnych odkazov
 - [x] Nahradiť FAQ piatimi témami zo zadania
-- [ ] Overiť obsah, odkazy, mobilné a desktopové zobrazenie
+- [x] Overiť obsah, odkazy, mobilné a desktopové zobrazenie
