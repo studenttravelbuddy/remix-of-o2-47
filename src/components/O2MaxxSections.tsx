@@ -292,10 +292,10 @@ export function MediaSection() {
       <div className="mx-auto max-w-4xl px-5 sm:px-8">
         <p className="eyebrow text-brand-pink">06 — Píšu o nás</p>
         <h2 className="mt-2 font-sans text-2xl font-black sm:text-4xl">O paušáli a našej spolupráci v médiách</h2>
-        <ul className="mt-8">
+        <ul className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2">
           {media.map(([outlet, title, href]) => (
             <li key={href}>
-              <a href={href} target="_blank" rel="noopener noreferrer" title={title} className="group flex min-h-14 items-center justify-between gap-4 border-b-2 border-border py-3 text-left">
+              <a href={href} target="_blank" rel="noopener noreferrer" title={title} className="group inline-flex min-h-12 items-center gap-2 border-b-2 border-border py-2 text-left">
                 <span className="text-lg font-black">{outlet}</span>
                 <ArrowUpRight className="h-5 w-5 shrink-0 text-brand-pink transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
               </a>
