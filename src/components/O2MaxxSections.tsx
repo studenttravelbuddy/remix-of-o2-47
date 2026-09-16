@@ -15,12 +15,12 @@ const MAXX_LINK = "https://www.o2.sk/ponuka/mobilne-sluzby/o2-maxx";
 const JUNIOR_LINK = "https://www.o2.sk/ponuka/mobilne-sluzby/o2-junior";
 
 const coreBenefits = [
-  "100 GB dát v plnej rýchlosti každý mesiac",
+  "100 GB dát v 5G v plnej rýchlosti každý mesiac",
   "Nevyužité dáta sa prenesú — až 180 GB v ďalšom mesiaci",
   "Po vyčerpaní dát sa internet nevypne, iba spomalí",
   "Neobmedzené volania a SMS/MMS na Slovensku aj v EÚ",
   "Roaming v EÚ vrátane Nórska, Islandu, Lichtenštajnska a Gibraltáru",
-  "12 mesiacov predplatného: Netflix, Voyo, HBO Max, O2 TV alebo Refresher",
+  "Predplatné v cene paušálu na 12 mesiacov: Netflix, Voyo, HBO Max, O2 TV alebo Refresher — všetko v cene paušálu, nič nedoplácaš",
   "Predplatnú službu môžeš meniť každý mesiac",
   "Bez viazanosti — odídeš, kedy chceš",
 ];
@@ -32,6 +32,7 @@ const tiers = [
     people: "Sám za seba",
     task: "Aktivuj si O2 Maxx na svoj platný preukaz ISIC, ITIC alebo EURO<26.",
     extras: [],
+    highlights: ["Základná cena 20 € mesačne"],
     color: "bg-brand-teal",
   },
   {
@@ -40,6 +41,7 @@ const tiers = [
     people: "Dvaja v O2 Spolu",
     task: "Spoj sa s jedným človekom v O2 Spolu.",
     extras: ["10 GB dátová rezerva navyše pre skupinu"],
+    highlights: ["Rovnaká cena 20 €", "+ 10 GB dátová rezerva navyše"],
     color: "bg-brand-orange",
   },
   {
@@ -48,6 +50,7 @@ const tiers = [
     people: "Traja v O2 Spolu",
     task: "Pridajte sa traja do jednej skupiny O2 Spolu.",
     extras: ["Skupinová odmena 5 € mesačne rozdelená medzi troch"],
+    highlights: ["− 1,70 € mesačne oproti 20 €", "Skupinová odmena 5 € mesačne"],
     color: "bg-brand-yellow",
   },
   {
@@ -56,6 +59,7 @@ const tiers = [
     people: "Štyria a viac",
     task: "Dajte sa dokopy štyria alebo viacerí — najvýhodnejšia cena.",
     extras: ["Skupinová odmena 10 € mesačne rozdelená medzi členov skupiny"],
+    highlights: ["− 2,50 € mesačne oproti 20 €", "Skupinová odmena 10 € mesačne"],
     color: "bg-brand-pink text-primary-foreground",
   },
 ];
