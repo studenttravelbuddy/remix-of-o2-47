@@ -129,7 +129,8 @@ export function BenefitsSection() {
         </div>
 
         {/* cenová os */}
-        <div className="no-scrollbar -mx-5 mt-10 overflow-x-auto px-5 sm:mx-0 sm:px-0">
+        <p className="mt-10 text-center text-sm font-black uppercase tracking-wide text-brand-pink">Klikni a ukážu sa ti benefity</p>
+        <div className="no-scrollbar -mx-5 mt-4 overflow-x-auto px-5 sm:mx-0 sm:px-0">
           <div className="relative flex min-w-[560px] items-stretch gap-3 sm:min-w-0">
             <div className="absolute left-0 right-0 top-7 h-1 rounded bg-border" aria-hidden="true" />
             {[...tiers].reverse().map((item) => {
