@@ -244,10 +244,10 @@ export function TogetherSection() {
 
 export function AudienceSection() {
   const audiences = [
-    { label: "ISIC", title: "Študenti", text: "Takmer 80 % mladých si cení výhody v mobilných službách a najmä strímovacie predplatné.", image: dievca.url, color: "bg-brand-teal", link: MAXX_LINK, cta: "O2 Maxx" },
-    { label: "ITIC", title: "Učitelia", text: "Hotspot z telefónu pomôže na hodinách, keď školské wifi nestačí.", image: ucitelka.url, color: "bg-brand-orange", link: MAXX_LINK, cta: "O2 Maxx" },
-    { label: "EURO<26", title: "Mladí pracujúci", text: "Hľadajú stabilné pokrytie, signál na podujatiach a roaming, ktorý funguje.", image: chalan.url, color: "bg-brand-pink text-primary-foreground", link: MAXX_LINK, cta: "O2 Maxx" },
-    { label: "O2 Junior", title: "Žiaci do 15 rokov", text: "Samostatná ponuka pre najmladších. Paušál im aktivuje rodič alebo zákonný zástupca.", image: chlapec.url, color: "bg-brand-yellow", link: JUNIOR_LINK, cta: "O2 Junior" },
+    { label: "ISIC", title: "Študenti", text: "Takmer 80 % mladých si cení výhody v mobilných službách a najmä strímovacie predplatné — Netflix, Voyo, HBO Max, O2 TV alebo Refresher.", image: dievca.url, color: "bg-brand-teal", link: MAXX_LINK, cta: "O2 Maxx", price: "20 €", priceNote: "mesačne · od 17,50 € s O2 Spolu", perks: [] as string[] },
+    { label: "ITIC", title: "Učitelia", text: "Hotspot z telefónu pomôže na hodinách, keď školské wifi nestačí.", image: ucitelka.url, color: "bg-brand-orange", link: MAXX_LINK, cta: "O2 Maxx", price: "20 €", priceNote: "mesačne · od 17,50 € s O2 Spolu", perks: [] as string[] },
+    { label: "EURO<26", title: "Mladí pracujúci", text: "Hľadajú stabilné pokrytie, signál na podujatiach a roaming, ktorý funguje.", image: chalan.url, color: "bg-brand-pink text-primary-foreground", link: MAXX_LINK, cta: "O2 Maxx", price: "20 €", priceNote: "mesačne · od 17,50 € s O2 Spolu", perks: [] as string[] },
+    { label: "O2 Junior", title: "Žiaci do 15 rokov", text: "Samostatná ponuka pre najmladších. Paušál im aktivuje rodič alebo zákonný zástupca.", image: chlapec.url, color: "bg-brand-yellow", link: JUNIOR_LINK, cta: "O2 Junior", price: "10,25 €", priceNote: "mesačne s O2 Paušálom", perks: ["10 GB dát s preukazom ISIC alebo EURO<26", "5 čísel s neobmedzenými volaniami a SMS", "O2 Security v cene", "Nastavenie limitov v O2 Aplikácii"] },
   ];
   return (
     <section id="pre-koho" className="scroll-mt-20 bg-background py-14 sm:py-24">
