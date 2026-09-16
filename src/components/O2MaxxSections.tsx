@@ -9,7 +9,7 @@ import ucitelka from "@/assets/hf_20260905_211704_30a25153-0e2c-49be-994f-970b69
 import photoOne from "@/assets/tlacovka-o2-ckmsyts-foto1.jpg.asset.json";
 import photoTwo from "@/assets/tlacovka-o2-ckmsyts-foto2.jpg.asset.json";
 import { Button } from "@/components/ui/button";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+
 
 const MAXX_LINK = "https://www.o2.sk/ponuka/mobilne-sluzby/o2-maxx";
 const JUNIOR_LINK = "https://www.o2.sk/ponuka/mobilne-sluzby/o2-junior";
