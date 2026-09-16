@@ -44,6 +44,8 @@
   --color-brand-orange: var(--brand-orange);
   --color-brand-orange-dark: var(--brand-orange-dark);
   --color-brand-pink: var(--brand-pink);
+  --color-brand-isic: var(--brand-isic);
+  --color-brand-isic-dark: var(--brand-isic-dark);
   --color-brand-pink-dark: var(--brand-pink-dark);
   --color-brand-gray: var(--brand-gray);
   --color-card-accent: var(--card-accent);
@@ -70,6 +72,8 @@
   --brand-orange: #ff7314;
   --brand-orange-dark: #8c2f0d;
   --brand-pink: #eb0578;
+  --brand-isic: #0065bd;
+  --brand-isic-dark: #004f96;
   --brand-pink-dark: #a80355;
   --brand-gray: #6e6e6e;
 
@@ -207,6 +211,8 @@
   min-height: 2.5rem;
   align-items: center;
   border-radius: 0.5rem;
+  border: 2px solid var(--color-border);
+  background-color: var(--background);
   padding: 0.55rem 0.85rem;
   font-size: 0.75rem;
   font-weight: 900;
