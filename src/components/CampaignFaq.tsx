@@ -8,11 +8,7 @@ import {
 const items = [
   {
     q: "Ako dlho platí ponuka?",
-    a: "Ponuka O2 Maxx odštartovala 1. septembra 2026. Aktuálne podmienky a možnosti aktivácie nájdeš na oficiálnej stránke O2 Maxx.",
-  },
-  {
-    q: "Čo ak mi preukaz stratí platnosť?",
-    a: "Tarif je určený pre držiteľov platného preukazu ISIC, ITIC alebo EURO<26. Ak preukaz stratí platnosť, tarif sa po skončení fakturačného obdobia zmení na O2 Fér.",
+    a: "Ponuka O2 Maxx platí od 1. septembra 2026 a trvá, kým máš platný preukaz ISIC, ITIC alebo EURO<26. Ak preukaz stratí platnosť, tarif sa po skončení fakturačného obdobia zmení na O2 Fér.",
   },
   {
     q: "Ako funguje O2 Spolu?",
