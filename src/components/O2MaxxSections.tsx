@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 
 const MAXX_LINK = "https://www.o2.sk/ponuka/mobilne-sluzby/o2-maxx";
 const JUNIOR_LINK = "https://www.o2.sk/ponuka/mobilne-sluzby/o2-junior";
+const SPOLU_LINK = "https://www.o2.sk/spolu";
 
 const coreBenefits = [
   "100 GB dát v 5G v plnej rýchlosti každý mesiac",
