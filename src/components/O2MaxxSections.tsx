@@ -217,10 +217,10 @@ export function TogetherSection() {
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div className="grid gap-10 lg:grid-cols-[.95fr_1.05fr] lg:items-center">
           <div>
-            <p className="eyebrow text-brand-pink">04 — O2 Spolu</p>
-            <h2 className="mt-2 font-sans text-5xl font-black leading-none text-brand-teal sm:text-7xl">O2 Spolu</h2>
-            <div className="relative mt-6 min-h-[340px] sm:min-h-[440px]">
-              <div className="absolute inset-x-0 bottom-0 h-2/3 rounded-t-[3rem] bg-brand-yellow" aria-hidden="true" />
+            <p className="eyebrow text-muted-foreground">Výhodnejšie v partii</p>
+            <h2 className="mt-2 font-sans text-4xl font-black leading-none text-brand-teal-deep sm:text-7xl">O2 Spolu</h2>
+            <div className="relative mt-6 min-h-[320px] sm:min-h-[440px]">
+              <div className="absolute inset-x-0 bottom-0 h-2/3 rounded-t-[3rem] border-2 border-b-0 border-brand-yellow bg-brand-teal-light" aria-hidden="true" />
               <div className="absolute inset-x-0 bottom-0 flex items-end justify-center">
                 <img src={baba.url} alt="Mladá žena z kampane Ready for more" className="h-[300px] w-[38%] object-cover object-top sm:h-[400px]" loading="lazy" decoding="async" />
                 <img src={chalan.url} alt="Mladý muž z kampane Ready for more" className="-ml-4 h-[320px] w-[38%] object-cover object-top sm:h-[430px]" loading="lazy" decoding="async" />
@@ -230,9 +230,9 @@ export function TogetherSection() {
             <p className="mt-4 text-center text-sm font-black uppercase tracking-wide">Partia = lepšia cena</p>
           </div>
           <div>
-            <h3 className="font-sans text-4xl font-black leading-none sm:text-6xl">Dajte sa dokopy.<br /><span className="text-brand-teal">Plaťte menej.</span></h3>
-            <p className="mt-5 max-w-xl text-lg">Čím viac vás je, tým výhodnejšie to je pre všetkých. Dajte sa dokopy s partiou a šetrite spolu.</p>
-            <div className="mt-8 flex items-end gap-4 border-b-2 border-foreground pb-5"><span className="text-7xl font-black text-brand-pink">17,50 €</span><span className="pb-2 text-sm font-bold">/ osoba mesačne<br />pri 4+ ľuďoch</span></div>
+            <h3 className="font-sans text-3xl font-black leading-none sm:text-6xl">Dajte sa dokopy.<br /><span className="text-brand-teal-deep">Plaťte menej.</span></h3>
+            <p className="mt-4 max-w-xl text-base sm:text-lg">Čím viac vás je, tým výhodnejšie to je pre všetkých. Dajte sa dokopy s partiou a šetrite spolu.</p>
+            <div className="mt-7 flex items-end gap-4 border-b-2 border-foreground pb-5"><span className="text-5xl font-black text-brand-isic sm:text-7xl">17,50 €</span><span className="pb-2 text-sm font-bold">/ osoba mesačne<br />pri 4+ ľuďoch</span></div>
             <div className="mt-6 grid grid-cols-2 gap-x-5 gap-y-5 sm:grid-cols-4">{levels.map(([people, price, note]) => <div key={people} className="border-l-4 border-brand-yellow pl-3"><p className="text-2xl font-black">{people}×</p><p className="font-black text-brand-teal-deep">{price}</p><p className="mt-1 text-xs text-muted-foreground">{note}</p></div>)}</div>
           </div>
         </div>
@@ -243,19 +243,19 @@ export function TogetherSection() {
 
 export function AudienceSection() {
   const audiences = [
-    { label: "ISIC", title: "Študenti", text: "Takmer 80 % mladých si cení výhody v mobilných službách a najmä strímovacie predplatné — Netflix, Voyo, HBO Max, O2 TV alebo Refresher.", image: dievca.url, color: "bg-brand-teal", link: MAXX_LINK, cta: "O2 Maxx", price: "20 €", priceNote: "mesačne · od 17,50 € s O2 Spolu", perks: [] as string[] },
-    { label: "ITIC", title: "Učitelia", text: "Hotspot z telefónu pomôže na hodinách, keď školské wifi nestačí.", image: ucitelka.url, color: "bg-brand-orange", link: MAXX_LINK, cta: "O2 Maxx", price: "20 €", priceNote: "mesačne · od 17,50 € s O2 Spolu", perks: [] as string[] },
-    { label: "EURO<26", title: "Mladí pracujúci", text: "Hľadajú stabilné pokrytie, signál na podujatiach a roaming, ktorý funguje.", image: chalan.url, color: "bg-brand-pink text-primary-foreground", link: MAXX_LINK, cta: "O2 Maxx", price: "20 €", priceNote: "mesačne · od 17,50 € s O2 Spolu", perks: [] as string[] },
-    { label: "O2 Junior", title: "Žiaci do 15 rokov", text: "Samostatná ponuka pre najmladších. Paušál im aktivuje rodič alebo zákonný zástupca.", image: chlapec.url, color: "bg-brand-yellow", link: JUNIOR_LINK, cta: "O2 Junior", price: "10,25 €", priceNote: "mesačne s O2 Paušálom", perks: ["10 GB dát s preukazom ISIC alebo EURO<26", "5 čísel s neobmedzenými volaniami a SMS", "O2 Security v cene", "Nastavenie limitov v O2 Aplikácii"] },
+    { label: "ISIC", title: "Študenti", text: "Takmer 80 % mladých si cení výhody v mobilných službách a najmä strímovacie predplatné — Netflix, Voyo, HBO Max, O2 TV alebo Refresher.", image: dievca.url, color: "border-brand-teal", link: MAXX_LINK, cta: "O2 Maxx", price: "20 €", priceNote: "mesačne · od 17,50 € s O2 Spolu", perks: [] as string[] },
+    { label: "ITIC", title: "Učitelia", text: "Hotspot z telefónu pomôže na hodinách, keď školské wifi nestačí.", image: ucitelka.url, color: "border-brand-teal-deep", link: MAXX_LINK, cta: "O2 Maxx", price: "20 €", priceNote: "mesačne · od 17,50 € s O2 Spolu", perks: [] as string[] },
+    { label: "EURO<26", title: "Mladí pracujúci", text: "Hľadajú stabilné pokrytie, signál na podujatiach a roaming, ktorý funguje.", image: chalan.url, color: "border-brand-isic", link: MAXX_LINK, cta: "O2 Maxx", price: "20 €", priceNote: "mesačne · od 17,50 € s O2 Spolu", perks: [] as string[] },
+    { label: "O2 Junior", title: "Žiaci do 15 rokov", text: "Samostatná ponuka pre najmladších. Paušál im aktivuje rodič alebo zákonný zástupca.", image: chlapec.url, color: "border-brand-yellow", link: JUNIOR_LINK, cta: "O2 Junior", price: "10,25 €", priceNote: "mesačne s O2 Paušálom", perks: ["10 GB dát s preukazom ISIC alebo EURO<26", "5 čísel s neobmedzenými volaniami a SMS", "O2 Security v cene", "Nastavenie limitov v O2 Aplikácii"] },
   ];
   return (
     <section id="pre-koho" className="scroll-mt-20 bg-background py-14 sm:py-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        <p className="eyebrow text-brand-pink">05 — Pre koho je to</p>
-        <h2 className="mt-3 font-sans text-4xl font-black sm:text-6xl">Jeden paušál.<br />Rôzne životy.</h2>
-        <div className="no-scrollbar -mx-5 mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:px-0">
+        <p className="eyebrow text-muted-foreground">Pre koho je to</p>
+        <h2 className="mt-3 font-sans text-3xl font-black sm:text-6xl">Jeden paušál.<br />Rôzne životy.</h2>
+        <div className="no-scrollbar -mx-5 mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:px-0">
           {audiences.map((item, i) => (
-            <article key={item.label} className={`relative flex min-h-[620px] w-[82%] shrink-0 snap-center flex-col overflow-hidden rounded-xl ${item.color} lg:w-auto ${i % 2 === 1 ? "lg:translate-y-8" : ""}`}>
+            <article key={item.label} className={`relative flex min-h-[600px] w-[82%] shrink-0 snap-center flex-col overflow-hidden rounded-xl border-2 bg-background ${item.color} lg:w-auto ${i % 2 === 1 ? "lg:translate-y-8" : ""}`}>
               <div className="relative z-20 p-6">
                 <p className="eyebrow">{item.label}</p>
                 <h3 className="mt-1 text-2xl font-black">{item.title}</h3>
@@ -289,14 +289,14 @@ export function MediaSection() {
   return (
     <section id="media" className="scroll-mt-20 border-y-2 border-border bg-background py-12 sm:py-16">
       <div className="mx-auto max-w-4xl px-5 sm:px-8">
-        <p className="eyebrow text-brand-pink">06 — Píšu o nás</p>
-        <h2 className="mt-2 font-sans text-2xl font-black sm:text-4xl">O paušáli a našej spolupráci v médiách</h2>
+        <p className="eyebrow text-muted-foreground">Píšu o nás</p>
+        <h2 className="mt-2 font-sans text-xl font-black sm:text-4xl">O paušáli a našej spolupráci v médiách</h2>
         <ul className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2">
           {media.map(([outlet, title, href]) => (
             <li key={href}>
               <a href={href} target="_blank" rel="noopener noreferrer" title={title} className="group inline-flex min-h-12 items-center gap-2 border-b-2 border-border py-2 text-left">
                 <span className="text-lg font-black">{outlet}</span>
-                <ArrowUpRight className="h-5 w-5 shrink-0 text-brand-pink transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
+                <ArrowUpRight className="h-5 w-5 shrink-0 text-brand-isic transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
               </a>
             </li>
           ))}
