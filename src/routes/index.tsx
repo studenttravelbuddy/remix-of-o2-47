@@ -88,6 +88,9 @@ function Index() {
         </div>
       </header>
 
+      <TogetherSection />
+      <BenefitsSection />
+
       <section className="bg-background py-14 sm:py-24">
         <div className="mx-auto max-w-5xl px-5 sm:px-8">
           <blockquote className="relative border-l-8 border-brand-yellow px-6 py-6 sm:px-12 sm:py-10">
@@ -102,9 +105,7 @@ function Index() {
         </div>
       </section>
 
-      <BenefitsSection />
       <WhyMaxxSection />
-      <TogetherSection />
       <AudienceSection />
       <PressGallery />
       <MediaSection />
