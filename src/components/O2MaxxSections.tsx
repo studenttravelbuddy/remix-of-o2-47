@@ -277,7 +277,7 @@ export function AudienceSection() {
                   {item.cta} <ArrowUpRight className="h-4 w-4" />
                 </a>
               </div>
-              <img src={item.image} alt={`${item.title} z kampane Ready for more`} className="absolute inset-x-0 bottom-0 h-[55%] w-full object-cover object-top" loading="lazy" decoding="async" />
+              <img src={item.image} alt={`${item.title} z kampane Ready for more`} className="mt-auto h-56 w-full object-cover object-top" loading="lazy" decoding="async" />
             </article>
           ))}
         </div>
