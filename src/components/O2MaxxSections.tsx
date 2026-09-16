@@ -194,6 +194,12 @@ export function BenefitsSection() {
                 </li>
               ))}
             </ul>
+            <p className="mt-5 text-xs leading-relaxed text-muted-foreground">
+              Odmenu získa skupina, ak sa počas celého zúčtovacieho obdobia zakladateľa nezmení počet členov skupiny. Ceny 18,30 € a 17,50 € vznikajú rozdelením odmeny rovnomerne medzi členov skupiny.{" "}
+              <a href={SPOLU_LINK} target="_blank" rel="noopener noreferrer" className="font-black text-foreground underline decoration-brand-teal decoration-2 underline-offset-4">
+                Všetky podmienky O2 Spolu na o2.sk/spolu
+              </a>
+            </p>
           </div>
         </div>
       </div>
