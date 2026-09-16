@@ -260,7 +260,19 @@ export function AudienceSection() {
               <div className="relative z-20 p-6">
                 <p className="eyebrow">{item.label}</p>
                 <h3 className="mt-1 text-2xl font-black">{item.title}</h3>
+                <p className="mt-2 text-3xl font-black leading-none">{item.price}</p>
+                <p className="text-xs font-bold">{item.priceNote}</p>
                 <p className="mt-3 max-w-xs text-sm font-medium leading-relaxed">{item.text}</p>
+                {item.perks.length > 0 && (
+                  <ul className="mt-3 space-y-1">
+                    {item.perks.map((perk) => (
+                      <li key={perk} className="flex items-start gap-2 text-xs font-bold leading-snug">
+                        <Check className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
+                        <span>{perk}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
                 <a href={item.link} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex min-h-11 items-center gap-1 text-sm font-black underline underline-offset-4">
                   {item.cta} <ArrowUpRight className="h-4 w-4" />
                 </a>
