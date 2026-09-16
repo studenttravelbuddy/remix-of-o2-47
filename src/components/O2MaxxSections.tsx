@@ -118,17 +118,17 @@ export function BenefitsSection() {
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div className="text-center">
           <p className="font-sans text-3xl font-black uppercase tracking-tight text-foreground sm:text-5xl">O2 MAXX</p>
-          <h2 className="mx-auto mt-3 max-w-4xl font-sans text-3xl font-black leading-tight sm:text-6xl">
+          <h2 className="mx-auto mt-3 max-w-4xl font-sans text-2xl font-black leading-tight sm:text-5xl">
             Celý balík výhod pre držiteľov{" "}
-            <span className="text-brand-teal">ISIC, ITIC a EURO&lt;26</span>
+            <span className="text-brand-teal-deep">ISIC, ITIC a EURO&lt;26</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base sm:text-lg">
+          <p className="mx-auto mt-4 max-w-2xl text-sm sm:text-lg">
             Začíname na 17,50 € mesačne. Klikni na cenu a ukážu sa ti benefity.
           </p>
         </div>
 
         {/* cenová os */}
-        <p className="mt-10 text-center text-sm font-black uppercase tracking-wide text-brand-pink">Klikni a ukážu sa ti benefity</p>
+        <p className="mt-10 text-center text-sm font-black uppercase tracking-wide text-brand-teal-deep">Klikni a ukážu sa ti benefity</p>
         <div className="no-scrollbar -mx-5 mt-4 overflow-x-auto px-5 sm:mx-0 sm:px-0">
           <div className="relative flex min-w-[560px] items-stretch gap-3 sm:min-w-0">
             <div className="absolute left-0 right-0 top-7 h-1 rounded bg-border" aria-hidden="true" />
@@ -141,7 +141,7 @@ export function BenefitsSection() {
                   type="button"
                   aria-pressed={selected}
                   onClick={() => setActive(index)}
-                  className={`relative flex-1 rounded-xl px-3 pb-4 pt-3 text-left transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${selected ? `${item.color} shadow-soft-teal` : "bg-muted hover:-translate-y-0.5"}`}
+                  className={`relative flex-1 rounded-xl border-2 bg-background px-3 pb-4 pt-3 text-left transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${selected ? `${item.color} shadow-soft-teal` : "border-border hover:-translate-y-0.5"}`}
                 >
                   <span className={`block h-4 w-4 rounded-full border-4 ${selected ? "border-foreground bg-background" : "border-border bg-background"}`} />
                   <span className="mt-3 block text-2xl font-black leading-none sm:text-3xl">{item.price}</span>
@@ -154,7 +154,7 @@ export function BenefitsSection() {
 
         <div className="mt-8 grid items-start gap-8 lg:grid-cols-[.9fr_1.1fr]">
           <div className="mx-auto w-full max-w-[280px]">
-            <div className="relative flex h-[480px] flex-col overflow-hidden rounded-[2.75rem] border-[10px] border-foreground bg-brand-teal shadow-soft-teal sm:h-[520px]">
+            <div className="relative flex h-[440px] flex-col overflow-hidden rounded-[2.75rem] border-[10px] border-foreground bg-brand-teal-light shadow-soft-teal sm:h-[520px]">
               <div className="mx-auto h-6 w-24 rounded-b-2xl bg-foreground" />
               <div className="flex flex-1 flex-col items-center justify-center px-5 text-center">
                 <p className="eyebrow">O2 Maxx</p>
@@ -163,7 +163,7 @@ export function BenefitsSection() {
                 <div className="my-6 h-px w-16 bg-foreground/30" />
                 <p className="text-lg font-black">100 GB</p>
                 <p className="text-sm">+ všetko okolo</p>
-                <Button variant="pink" size="lg" className="mt-7" asChild>
+                <Button variant="ink" size="lg" className="mt-7" asChild>
                   <a href={MAXX_LINK} target="_blank" rel="noopener noreferrer">Chcem ho <ArrowUpRight /></a>
                 </Button>
               </div>
@@ -171,7 +171,7 @@ export function BenefitsSection() {
           </div>
 
           <div>
-            <div className={`rounded-xl px-5 py-4 ${tier.color}`}>
+            <div className={`rounded-xl border-2 bg-background px-5 py-4 ${tier.color}`}>
               <p className="text-sm font-black uppercase tracking-wide">Čo pre to treba urobiť</p>
               <p className="mt-1 text-base font-bold">{tier.task}</p>
             </div>
@@ -179,7 +179,7 @@ export function BenefitsSection() {
               {tier.highlights.map((highlight, i) => (
                 <span
                   key={highlight}
-                  className={`rounded-full px-4 py-2 text-sm font-black ${i === 0 ? "bg-brand-pink text-primary-foreground" : "bg-brand-yellow text-foreground"}`}
+                  className={`rounded-full border-2 bg-background px-4 py-2 text-sm font-black ${i === 0 ? "border-brand-isic text-brand-isic" : "border-brand-yellow text-foreground"}`}
                 >
                   {highlight}
                 </span>
