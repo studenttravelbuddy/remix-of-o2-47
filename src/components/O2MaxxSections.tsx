@@ -30,7 +30,7 @@ const tiers = [
   {
     id: "solo",
     price: "20 €",
-    people: "1 osoba",
+    people: "\n",
     task: "Aktivuj si O2 Maxx na svoj platný preukaz ISIC, ITIC alebo EURO<26.",
     extras: [],
     highlights: ["Základná cena 20 € mesačne"],
@@ -39,7 +39,7 @@ const tiers = [
   {
     id: "duo",
     price: "20 €",
-    people: "2 osoby",
+    people: "\n",
     task: "Spoj sa s jedným človekom do skupiny O2 Spolu (2 programy).",
     extras: ["Dátová rezerva 10 GB pre skupinu + 1 GB dát v Zóne 2"],
     highlights: ["Rovnaká cena 20 €", "+ dátová rezerva 10 GB"],
@@ -48,7 +48,7 @@ const tiers = [
   {
     id: "trio",
     price: "cca 18,30 €",
-    people: "3 osoby",
+    people: "\n",
     task: "Spojte 3 programy do jednej skupiny O2 Spolu.",
     extras: ["Odmena 5 € mesačne rozdelená rovnomerne medzi troch", "Dátová rezerva 20 GB pre skupinu + 1 GB dát v Zóne 2"],
     highlights: ["− 1,70 € mesačne/člen oproti 20 €", "Odmena 5 € mesačne pre skupinu"],
@@ -57,7 +57,7 @@ const tiers = [
   {
     id: "quad",
     price: "17,50 €",
-    people: "4 osoby",
+    people: "\n",
     task: "Spojte 4 programy do jednej skupiny O2 Spolu — najvýhodnejšia cena.",
     extras: ["Odmena 10 € mesačne rozdelená rovnomerne medzi štyroch", "Dátová rezerva 30 GB pre skupinu + 1 GB dát v Zóne 2"],
     highlights: ["− 2,50 € mesačne/člen oproti 20 €", "Odmena 10 € mesačne pre skupinu"],
