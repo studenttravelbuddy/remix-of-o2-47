@@ -176,6 +176,16 @@ export function BenefitsSection() {
               <p className="text-sm font-black uppercase tracking-wide">Čo pre to treba urobiť</p>
               <p className="mt-1 text-base font-bold">{tier.task}</p>
             </div>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {tier.highlights.map((highlight, i) => (
+                <span
+                  key={highlight}
+                  className={`rounded-full px-4 py-2 text-sm font-black ${i === 0 ? "bg-brand-pink text-primary-foreground" : "bg-brand-yellow text-foreground"}`}
+                >
+                  {highlight}
+                </span>
+              ))}
+            </div>
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">
               {[...tier.extras, ...coreBenefits].map((benefit) => (
                 <li key={benefit} className="flex items-start gap-3 border-t-2 border-border pt-3 text-sm font-medium leading-relaxed">
@@ -184,7 +194,6 @@ export function BenefitsSection() {
                 </li>
               ))}
             </ul>
-            <StreamingHelp />
           </div>
         </div>
       </div>
