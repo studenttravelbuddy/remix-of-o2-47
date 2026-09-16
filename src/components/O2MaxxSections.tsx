@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 
 const MAXX_LINK = "https://www.o2.sk/ponuka/mobilne-sluzby/o2-maxx";
 const JUNIOR_LINK = "https://www.o2.sk/ponuka/mobilne-sluzby/o2-junior";
+const SPOLU_LINK = "https://www.o2.sk/spolu";
 
 const coreBenefits = [
   "100 GB dát v 5G v plnej rýchlosti každý mesiac",
@@ -29,7 +30,7 @@ const tiers = [
   {
     id: "solo",
     price: "20 €",
-    people: "Sám za seba",
+    people: "1 osoba",
     task: "Aktivuj si O2 Maxx na svoj platný preukaz ISIC, ITIC alebo EURO<26.",
     extras: [],
     highlights: ["Základná cena 20 € mesačne"],
@@ -38,28 +39,28 @@ const tiers = [
   {
     id: "duo",
     price: "20 €",
-    people: "Dvaja v O2 Spolu",
-    task: "Spoj sa s jedným človekom v O2 Spolu.",
-    extras: ["10 GB dátová rezerva navyše pre skupinu"],
-    highlights: ["Rovnaká cena 20 €", "+ 10 GB dátová rezerva navyše"],
+    people: "2 osoby",
+    task: "Spoj sa s jedným človekom do skupiny O2 Spolu (2 programy).",
+    extras: ["Dátová rezerva 10 GB pre skupinu + 1 GB dát v Zóne 2"],
+    highlights: ["Rovnaká cena 20 €", "+ dátová rezerva 10 GB"],
     color: "bg-brand-teal-deep text-primary-foreground",
   },
   {
     id: "trio",
     price: "cca 18,30 €",
-    people: "Traja v O2 Spolu",
-    task: "Pridajte sa traja do jednej skupiny O2 Spolu.",
-    extras: ["Skupinová odmena 5 € mesačne rozdelená medzi troch"],
-    highlights: ["− 1,70 € mesačne oproti 20 €", "Skupinová odmena 5 € mesačne"],
+    people: "3 osoby",
+    task: "Spojte 3 programy do jednej skupiny O2 Spolu.",
+    extras: ["Odmena 5 € mesačne rozdelená rovnomerne medzi troch", "Dátová rezerva 20 GB pre skupinu + 1 GB dát v Zóne 2"],
+    highlights: ["− 1,70 € mesačne oproti 20 €", "Odmena 5 € mesačne pre skupinu"],
     color: "bg-brand-yellow text-foreground",
   },
   {
     id: "quad",
     price: "17,50 €",
-     people: "Štyria",
-     task: "Dajte sa dokopy štyria — najvýhodnejšia cena.",
-    extras: ["Skupinová odmena 10 € mesačne rozdelená medzi členov skupiny"],
-    highlights: ["− 2,50 € mesačne oproti 20 €", "Skupinová odmena 10 € mesačne"],
+    people: "4 osoby",
+    task: "Spojte 4 programy do jednej skupiny O2 Spolu — najvýhodnejšia cena.",
+    extras: ["Odmena 10 € mesačne rozdelená rovnomerne medzi štyroch", "Dátová rezerva 30 GB pre skupinu + 1 GB dát v Zóne 2"],
+    highlights: ["− 2,50 € mesačne oproti 20 €", "Odmena 10 € mesačne pre skupinu"],
     color: "bg-brand-teal-deep text-primary-foreground",
   },
 ];
@@ -193,6 +194,12 @@ export function BenefitsSection() {
                 </li>
               ))}
             </ul>
+            <p className="mt-5 text-xs leading-relaxed text-muted-foreground">
+              Odmenu získa skupina, ak sa počas celého zúčtovacieho obdobia zakladateľa nezmení počet členov skupiny. Ceny 18,30 € a 17,50 € vznikajú rozdelením odmeny rovnomerne medzi členov skupiny.{" "}
+              <a href={SPOLU_LINK} target="_blank" rel="noopener noreferrer" className="font-black text-foreground underline decoration-brand-teal decoration-2 underline-offset-4">
+                Všetky podmienky O2 Spolu na o2.sk/spolu
+              </a>
+            </p>
           </div>
         </div>
       </div>
@@ -210,7 +217,10 @@ export function WhyMaxxSection() {
 
 export function TogetherSection() {
   const levels = [
-    ["1", "20 €", "samostatne"], ["2", "20 €", "+ 10 GB dátová rezerva"], ["3", "cca 18,30 €", "odmena 5 € rozdelená medzi troch"], ["4+", "17,50 €", "odmena 10 € rozdelená medzi skupinu"],
+    ["1 osoba", "20 €", "samostatne, bez skupiny"],
+    ["2 osoby", "20 €", "dátová rezerva 10 GB + 1 GB v Zóne 2"],
+    ["3 osoby", "cca 18,30 €", "odmena 5 € rozdelená rovnomerne medzi troch + rezerva 20 GB"],
+    ["4 osoby", "17,50 €", "odmena 10 € rozdelená rovnomerne medzi štyroch + rezerva 30 GB"],
   ];
   return (
     <section id="spolu" className="scroll-mt-20 overflow-hidden bg-background py-14 sm:py-24">
@@ -233,7 +243,21 @@ export function TogetherSection() {
             <h3 className="font-sans text-3xl font-black leading-none sm:text-6xl">Dajte sa dokopy.<br /><span className="text-brand-teal-deep">Plaťte menej.</span></h3>
             <p className="mt-4 max-w-xl text-base sm:text-lg">Čím viac vás je, tým výhodnejšie to je pre všetkých. Dajte sa dokopy s partiou a šetrite spolu.</p>
              <div className="mt-7 flex items-end gap-4 border-b-2 border-foreground pb-5"><span className="text-5xl font-black text-brand-teal-deep sm:text-7xl">17,50 €</span><span className="pb-2 text-sm font-bold">/ osoba mesačne<br />pri 4 ľuďoch</span></div>
-             <div className="mt-6 grid grid-cols-2 gap-x-5 gap-y-5 sm:grid-cols-4">{levels.map(([people, price, note]) => <div key={people} className="border-l-4 border-brand-yellow pl-3"><p className="text-2xl font-black">{people === "4+" ? "4" : people}×</p><p className="font-black text-brand-teal-deep">{price}</p><p className="mt-1 text-xs text-muted-foreground">{note}</p></div>)}</div>
+             <div className="mt-6 grid grid-cols-2 gap-x-5 gap-y-5 sm:grid-cols-4">{levels.map(([people, price, note]) => <div key={people} className="border-l-4 border-brand-yellow pl-3"><p className="text-xl font-black sm:text-2xl">{people}</p><p className="font-black text-brand-teal-deep">{price}</p><p className="mt-1 text-xs text-muted-foreground">{note}</p></div>)}</div>
+            <div className="mt-8 rounded-xl bg-brand-highlight p-5">
+              <p className="text-sm font-black uppercase tracking-wide">Čo skupina dostane každý mesiac</p>
+              <ul className="mt-3 grid gap-2 text-sm font-medium">
+                <li>2 programy v skupine: dátová rezerva 10 GB + 1 GB dát v Zóne 2</li>
+                <li>3 programy v skupine: odmena 5 € + rezerva 20 GB + 1 GB dát v Zóne 2</li>
+                <li>4 a viac programov: odmena 10 € + rezerva 30 GB + 1 GB dát v Zóne 2</li>
+              </ul>
+              <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+                Odmenu získa skupina vtedy, ak sa počas celého zúčtovacieho obdobia zakladateľa nezmení počet členov skupiny. Vypláca sa cez O2 Aplikáciu na účet alebo ako poukážka do e-shopu či O2 Predajne. Ceny 18,30 € a 17,50 € vznikajú rozdelením odmeny rovnomerne medzi členov skupiny.
+              </p>
+              <a href={SPOLU_LINK} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex items-center gap-1 text-sm font-black text-foreground underline decoration-brand-teal decoration-2 underline-offset-4">
+                Všetky podmienky O2 Spolu na o2.sk/spolu <ArrowUpRight className="h-4 w-4" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
