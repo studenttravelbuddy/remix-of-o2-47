@@ -210,7 +210,10 @@ export function WhyMaxxSection() {
 
 export function TogetherSection() {
   const levels = [
-    ["1", "20 €", "samostatne"], ["2", "20 €", "+ 10 GB dátová rezerva"], ["3", "cca 18,30 €", "odmena 5 € rozdelená medzi troch"], ["4+", "17,50 €", "odmena 10 € rozdelená medzi skupinu"],
+    ["1 osoba", "20 €", "samostatne, bez skupiny"],
+    ["2 osoby", "20 €", "dátová rezerva 10 GB + 1 GB v Zóne 2"],
+    ["3 osoby", "cca 18,30 €", "odmena 5 € rozdelená rovnomerne medzi troch + rezerva 20 GB"],
+    ["4 osoby", "17,50 €", "odmena 10 € rozdelená rovnomerne medzi štyroch + rezerva 30 GB"],
   ];
   return (
     <section id="spolu" className="scroll-mt-20 overflow-hidden bg-background py-14 sm:py-24">
