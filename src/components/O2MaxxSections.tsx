@@ -33,7 +33,7 @@ const tiers = [
     task: "Aktivuj si O2 Maxx na svoj platný preukaz ISIC, ITIC alebo EURO<26.",
     extras: [],
     highlights: ["Základná cena 20 € mesačne"],
-    color: "border-brand-teal",
+    color: "bg-brand-teal text-foreground",
   },
   {
     id: "duo",
@@ -42,7 +42,7 @@ const tiers = [
     task: "Spoj sa s jedným človekom v O2 Spolu.",
     extras: ["10 GB dátová rezerva navyše pre skupinu"],
     highlights: ["Rovnaká cena 20 €", "+ 10 GB dátová rezerva navyše"],
-    color: "border-brand-teal-deep",
+    color: "bg-brand-teal-deep text-primary-foreground",
   },
   {
     id: "trio",
@@ -51,7 +51,7 @@ const tiers = [
     task: "Pridajte sa traja do jednej skupiny O2 Spolu.",
     extras: ["Skupinová odmena 5 € mesačne rozdelená medzi troch"],
     highlights: ["− 1,70 € mesačne oproti 20 €", "Skupinová odmena 5 € mesačne"],
-    color: "border-brand-yellow",
+    color: "bg-brand-yellow text-foreground",
   },
   {
     id: "quad",
@@ -60,7 +60,7 @@ const tiers = [
     task: "Dajte sa dokopy štyria alebo viacerí — najvýhodnejšia cena.",
     extras: ["Skupinová odmena 10 € mesačne rozdelená medzi členov skupiny"],
     highlights: ["− 2,50 € mesačne oproti 20 €", "Skupinová odmena 10 € mesačne"],
-    color: "border-brand-isic",
+    color: "bg-brand-teal-deep text-primary-foreground",
   },
 ];
 
@@ -141,9 +141,9 @@ export function BenefitsSection() {
                   type="button"
                   aria-pressed={selected}
                   onClick={() => setActive(index)}
-                  className={`relative flex-1 rounded-xl border-2 bg-background px-3 pb-4 pt-3 text-left transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${selected ? `${item.color} shadow-soft-teal` : "border-border hover:-translate-y-0.5"}`}
+                  className={`relative flex-1 rounded-xl px-3 pb-4 pt-3 text-left transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${selected ? `${item.color} shadow-soft-teal` : "bg-brand-highlight text-foreground hover:-translate-y-0.5"}`}
                 >
-                  <span className={`block h-4 w-4 rounded-full border-4 ${selected ? "border-foreground bg-background" : "border-border bg-background"}`} />
+                  <span className={`block h-4 w-4 rounded-full border-4 bg-background ${selected ? "border-foreground" : "border-brand-teal"}`} />
                   <span className="mt-3 block text-2xl font-black leading-none sm:text-3xl">{item.price}</span>
                   <span className="mt-1 block text-xs font-bold">{item.people}</span>
                 </button>
@@ -154,7 +154,7 @@ export function BenefitsSection() {
 
         <div className="mt-8 grid items-start gap-8 lg:grid-cols-[.9fr_1.1fr]">
           <div className="mx-auto w-full max-w-[280px]">
-            <div className="relative flex h-[440px] flex-col overflow-hidden rounded-[2.75rem] border-[10px] border-foreground bg-brand-teal-light shadow-soft-teal sm:h-[520px]">
+            <div className="relative flex h-[440px] flex-col overflow-hidden rounded-[2.75rem] border-[10px] border-foreground bg-brand-teal shadow-soft-teal sm:h-[520px]">
               <div className="mx-auto h-6 w-24 rounded-b-2xl bg-foreground" />
               <div className="flex flex-1 flex-col items-center justify-center px-5 text-center">
                 <p className="eyebrow">O2 Maxx</p>
@@ -171,7 +171,7 @@ export function BenefitsSection() {
           </div>
 
           <div>
-            <div className={`rounded-xl border-2 bg-background px-5 py-4 ${tier.color}`}>
+            <div className={`rounded-xl px-5 py-4 ${tier.color}`}>
               <p className="text-sm font-black uppercase tracking-wide">Čo pre to treba urobiť</p>
               <p className="mt-1 text-base font-bold">{tier.task}</p>
             </div>
@@ -179,7 +179,7 @@ export function BenefitsSection() {
               {tier.highlights.map((highlight, i) => (
                 <span
                   key={highlight}
-                  className={`rounded-full border-2 bg-background px-4 py-2 text-sm font-black ${i === 0 ? "border-brand-isic text-brand-isic" : "border-brand-yellow text-foreground"}`}
+                  className={`rounded-full px-4 py-2 text-sm font-black text-foreground ${i === 0 ? "bg-brand-yellow" : "bg-brand-highlight"}`}
                 >
                   {highlight}
                 </span>
@@ -220,7 +220,7 @@ export function TogetherSection() {
             <p className="eyebrow text-muted-foreground">Výhodnejšie v partii</p>
             <h2 className="mt-2 font-sans text-4xl font-black leading-none text-brand-teal-deep sm:text-7xl">O2 Spolu</h2>
             <div className="relative mt-6 min-h-[320px] sm:min-h-[440px]">
-              <div className="absolute inset-x-0 bottom-0 h-2/3 rounded-t-[3rem] border-2 border-b-0 border-brand-yellow bg-brand-teal-light" aria-hidden="true" />
+              <div className="absolute inset-x-0 bottom-0 h-2/3 rounded-t-[3rem] bg-brand-yellow" aria-hidden="true" />
               <div className="absolute inset-x-0 bottom-0 flex items-end justify-center">
                 <img src={baba.url} alt="Mladá žena z kampane Ready for more" className="h-[300px] w-[38%] object-cover object-top sm:h-[400px]" loading="lazy" decoding="async" />
                 <img src={chalan.url} alt="Mladý muž z kampane Ready for more" className="-ml-4 h-[320px] w-[38%] object-cover object-top sm:h-[430px]" loading="lazy" decoding="async" />
@@ -232,7 +232,7 @@ export function TogetherSection() {
           <div>
             <h3 className="font-sans text-3xl font-black leading-none sm:text-6xl">Dajte sa dokopy.<br /><span className="text-brand-teal-deep">Plaťte menej.</span></h3>
             <p className="mt-4 max-w-xl text-base sm:text-lg">Čím viac vás je, tým výhodnejšie to je pre všetkých. Dajte sa dokopy s partiou a šetrite spolu.</p>
-            <div className="mt-7 flex items-end gap-4 border-b-2 border-foreground pb-5"><span className="text-5xl font-black text-brand-isic sm:text-7xl">17,50 €</span><span className="pb-2 text-sm font-bold">/ osoba mesačne<br />pri 4+ ľuďoch</span></div>
+            <div className="mt-7 flex items-end gap-4 border-b-2 border-foreground pb-5"><span className="text-5xl font-black text-brand-teal-deep sm:text-7xl">17,50 €</span><span className="pb-2 text-sm font-bold">/ osoba mesačne<br />pri 4+ ľuďoch</span></div>
             <div className="mt-6 grid grid-cols-2 gap-x-5 gap-y-5 sm:grid-cols-4">{levels.map(([people, price, note]) => <div key={people} className="border-l-4 border-brand-yellow pl-3"><p className="text-2xl font-black">{people}×</p><p className="font-black text-brand-teal-deep">{price}</p><p className="mt-1 text-xs text-muted-foreground">{note}</p></div>)}</div>
           </div>
         </div>
@@ -243,10 +243,10 @@ export function TogetherSection() {
 
 export function AudienceSection() {
   const audiences = [
-    { label: "ISIC", title: "Študenti", text: "Takmer 80 % mladých si cení výhody v mobilných službách a najmä strímovacie predplatné — Netflix, Voyo, HBO Max, O2 TV alebo Refresher.", image: dievca.url, color: "border-brand-teal", link: MAXX_LINK, cta: "O2 Maxx", price: "20 €", priceNote: "mesačne · od 17,50 € s O2 Spolu", perks: [] as string[] },
-    { label: "ITIC", title: "Učitelia", text: "Hotspot z telefónu pomôže na hodinách, keď školské wifi nestačí.", image: ucitelka.url, color: "border-brand-teal-deep", link: MAXX_LINK, cta: "O2 Maxx", price: "20 €", priceNote: "mesačne · od 17,50 € s O2 Spolu", perks: [] as string[] },
-    { label: "EURO<26", title: "Mladí pracujúci", text: "Hľadajú stabilné pokrytie, signál na podujatiach a roaming, ktorý funguje.", image: chalan.url, color: "border-brand-isic", link: MAXX_LINK, cta: "O2 Maxx", price: "20 €", priceNote: "mesačne · od 17,50 € s O2 Spolu", perks: [] as string[] },
-    { label: "O2 Junior", title: "Žiaci do 15 rokov", text: "Samostatná ponuka pre najmladších. Paušál im aktivuje rodič alebo zákonný zástupca.", image: chlapec.url, color: "border-brand-yellow", link: JUNIOR_LINK, cta: "O2 Junior", price: "10,25 €", priceNote: "mesačne s O2 Paušálom", perks: ["10 GB dát s preukazom ISIC alebo EURO<26", "5 čísel s neobmedzenými volaniami a SMS", "O2 Security v cene", "Nastavenie limitov v O2 Aplikácii"] },
+    { label: "ISIC", title: "Študenti", text: "Takmer 80 % mladých si cení výhody v mobilných službách a najmä strímovacie predplatné — Netflix, Voyo, HBO Max, O2 TV alebo Refresher.", image: dievca.url, color: "bg-brand-teal text-foreground", link: MAXX_LINK, cta: "O2 Maxx", price: "20 €", priceNote: "mesačne · od 17,50 € s O2 Spolu", perks: [] as string[] },
+    { label: "ITIC", title: "Učitelia", text: "Hotspot z telefónu pomôže na hodinách, keď školské wifi nestačí.", image: ucitelka.url, color: "bg-brand-orange text-foreground", link: MAXX_LINK, cta: "O2 Maxx", price: "20 €", priceNote: "mesačne · od 17,50 € s O2 Spolu", perks: [] as string[] },
+    { label: "EURO<26", title: "Mladí pracujúci", text: "Hľadajú stabilné pokrytie, signál na podujatiach a roaming, ktorý funguje.", image: chalan.url, color: "bg-brand-yellow text-foreground", link: MAXX_LINK, cta: "O2 Maxx", price: "20 €", priceNote: "mesačne · od 17,50 € s O2 Spolu", perks: [] as string[] },
+    { label: "O2 Junior", title: "Žiaci do 15 rokov", text: "Samostatná ponuka pre najmladších. Paušál im aktivuje rodič alebo zákonný zástupca.", image: chlapec.url, color: "bg-brand-highlight text-foreground", link: JUNIOR_LINK, cta: "O2 Junior", price: "10,25 €", priceNote: "mesačne s O2 Paušálom", perks: ["10 GB dát s preukazom ISIC alebo EURO<26", "5 čísel s neobmedzenými volaniami a SMS", "O2 Security v cene", "Nastavenie limitov v O2 Aplikácii"] },
   ];
   return (
     <section id="pre-koho" className="scroll-mt-20 bg-background py-14 sm:py-24">
@@ -255,7 +255,7 @@ export function AudienceSection() {
         <h2 className="mt-3 font-sans text-3xl font-black sm:text-6xl">Jeden paušál.<br />Rôzne životy.</h2>
         <div className="no-scrollbar -mx-5 mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:px-0">
           {audiences.map((item, i) => (
-            <article key={item.label} className={`relative flex min-h-[600px] w-[82%] shrink-0 snap-center flex-col overflow-hidden rounded-xl border-2 bg-background ${item.color} lg:w-auto ${i % 2 === 1 ? "lg:translate-y-8" : ""}`}>
+            <article key={item.label} className={`relative flex min-h-[600px] w-[82%] shrink-0 snap-center flex-col overflow-hidden rounded-xl ${item.color} lg:w-auto ${i % 2 === 1 ? "lg:translate-y-8" : ""}`}>
               <div className="relative z-20 p-6">
                 <p className="eyebrow">{item.label}</p>
                 <h3 className="mt-1 text-2xl font-black">{item.title}</h3>
@@ -296,7 +296,7 @@ export function MediaSection() {
             <li key={href}>
               <a href={href} target="_blank" rel="noopener noreferrer" title={title} className="group inline-flex min-h-12 items-center gap-2 border-b-2 border-border py-2 text-left">
                 <span className="text-lg font-black">{outlet}</span>
-                <ArrowUpRight className="h-5 w-5 shrink-0 text-brand-isic transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
+                <ArrowUpRight className="h-5 w-5 shrink-0 text-brand-pink transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
               </a>
             </li>
           ))}
