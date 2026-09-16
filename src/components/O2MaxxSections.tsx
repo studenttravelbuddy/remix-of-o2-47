@@ -108,7 +108,7 @@ export function PressGallery() {
 
 export function BenefitsSection() {
   const [active, setActive] = useState(3);
-  const tier = tiers[active];
+  const tier = tiers[active] ?? tiers[0]!;
 
   return (
     <section id="benefity" className="scroll-mt-20 overflow-hidden bg-background py-14 sm:py-24">
