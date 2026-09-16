@@ -89,22 +89,21 @@ export function PressGallery() {
   return (
     <section aria-labelledby="press-title" className="bg-background px-5 py-12 sm:px-8 sm:py-16">
       <div className="mx-auto max-w-4xl">
-        <p className="eyebrow text-brand-pink">Zo zákulisia</p>
-        <h2 id="press-title" className="mt-2 max-w-2xl font-sans text-2xl font-black sm:text-4xl">
-          Deň, keď sme si povedali: ideme do toho spolu.
+        <p className="eyebrow text-muted-foreground">Zo zákulisia</p>
+        <h2 id="press-title" className="mt-2 max-w-2xl font-sans text-xl font-black sm:text-3xl">
+          1. september 2026 — oficiálny štart spolupráce O2 × CKM SYTS
         </h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-2">
-          <figure className="relative overflow-hidden rounded-xl bg-muted">
+          <figure className="relative overflow-hidden rounded-xl border-2 border-border bg-muted">
             <img src={photoOne.url} alt="Lukáš Baťo prezentuje spoluprácu O2 a CKM SYTS" className="aspect-[3/2] h-full w-full object-cover" width={1154} height={768} loading="lazy" decoding="async" />
-            <NamePlate className="right-2 top-[38%] max-w-[46%]" name="Lukáš Baťo" role="Product Owner, O2 Slovakia" />
+            <NamePlate className="bottom-3 right-2 max-w-[52%]" name="Lukáš Baťo" role="Product Owner, O2 Slovakia" />
           </figure>
-          <figure className="relative overflow-hidden rounded-xl bg-muted">
+          <figure className="relative overflow-hidden rounded-xl border-2 border-border bg-muted">
             <img src={photoTwo.url} alt="Michal Bučko a Lukáš Baťo predstavujú nové partnerstvo" className="aspect-[3/2] h-full w-full object-cover" width={1154} height={768} loading="lazy" decoding="async" />
-            <NamePlate className="left-1/2 top-[26%] max-w-[44%] -translate-x-1/2" name="Mgr. Michal Bučko" role="prezident CKM SYTS" />
-            <NamePlate className="right-1 top-[56%] max-w-[36%]" name="Lukáš Baťo" role="Product Owner, O2 Slovakia" />
+            <NamePlate className="bottom-3 left-2 max-w-[46%]" name="Mgr. Michal Bučko" role="prezident CKM SYTS" />
+            <NamePlate className="bottom-3 right-2 max-w-[46%]" name="Lukáš Baťo" role="Product Owner, O2 Slovakia" />
           </figure>
         </div>
-        <p className="mt-3 text-sm font-bold text-muted-foreground">1. september 2026 — oficiálny štart spolupráce O2 × CKM SYTS</p>
       </div>
     </section>
   );
