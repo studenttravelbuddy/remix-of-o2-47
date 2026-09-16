@@ -201,20 +201,6 @@ export function BenefitsSection() {
   );
 }
 
-function StreamingHelp() {
-  return (
-    <TooltipProvider delayDuration={100}>
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Button variant="outline" size="sm" className="mt-6 min-h-11"><CircleHelp /> Čo je streamovanie?</Button>
-        </TooltipTrigger>
-        <TooltipContent side="bottom" className="max-w-xs p-4 text-sm leading-relaxed">
-          Pozeranie filmov, seriálov alebo počúvanie hudby priamo online cez appku — bez sťahovania. Stačí internet a účet v danej appke.
-        </TooltipContent>
-      </Tooltip>
-    </TooltipProvider>
-  );
-}
 
 export function WhyMaxxSection() {
   const reasons = ["Voláš a píšeš komukoľvek bez počítania kontaktov.", "Ročné predplatné je priamo v cene.", "Nevyužité dáta sa prenesú do ďalšieho mesiaca.", "Internet funguje ďalej aj po minutí 100 GB."];
