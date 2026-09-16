@@ -52,6 +52,19 @@ export function CampaignFaq() {
                     </AccordionTrigger>
                     <AccordionContent className="pb-5 text-sm leading-relaxed text-muted-foreground sm:text-base">
                       {item.a}
+                      {item.link ? (
+                        <>
+                          {" "}
+                          <a
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-bold text-foreground underline decoration-brand-teal decoration-2 underline-offset-4"
+                          >
+                            Všetky podmienky O2 Spolu na o2.sk/spolu
+                          </a>
+                        </>
+                      ) : null}
                     </AccordionContent>
                   </AccordionItem>
                 ))}
