@@ -69,7 +69,7 @@ function Index() {
             <div className="relative z-20">
               <p className="eyebrow text-muted-foreground">Nové partnerstvo · nový O2 Maxx</p>
               <h1 className="mt-3 font-sans text-4xl font-black leading-[0.95] sm:text-7xl lg:text-8xl">O2 Maxx už od<br /><span className="text-brand-teal-deep">17,50 €</span></h1>
-              <p className="mt-3 text-sm font-black uppercase">mesačne s O2 Spolu pri 4+ ľuďoch · samostatne 20 €</p>
+               <p className="mt-3 text-sm font-black uppercase">MESAČNE S O2 SPOLU PRI 4 ĽUĎOCH · SAMOSTATNE 20 €</p>
               <div className="mt-6 flex flex-wrap gap-2"><span className="offer-pill bg-brand-yellow">100 GB v 5G + prenos dát do ďalšieho mesiaca</span><span className="offer-pill bg-brand-teal">Neobmedzené volania a správy na Slovensku a v EÚ</span><span className="offer-pill bg-brand-highlight">Netflix / HBO Max / Voyo a iné v cene paušálu na rok</span><span className="offer-pill bg-brand-orange">Bez viazanosti</span></div>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <Button variant="ink" size="xl" className="w-full sm:w-auto" asChild><a href={MAXX_LINK} target="_blank" rel="noopener noreferrer">Chcem O2 Maxx <ArrowUpRight /></a></Button>

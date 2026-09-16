@@ -56,8 +56,8 @@ const tiers = [
   {
     id: "quad",
     price: "17,50 €",
-    people: "Štyria a viac",
-    task: "Dajte sa dokopy štyria alebo viacerí — najvýhodnejšia cena.",
+     people: "Štyria",
+     task: "Dajte sa dokopy štyria — najvýhodnejšia cena.",
     extras: ["Skupinová odmena 10 € mesačne rozdelená medzi členov skupiny"],
     highlights: ["− 2,50 € mesačne oproti 20 €", "Skupinová odmena 10 € mesačne"],
     color: "bg-brand-teal-deep text-primary-foreground",
@@ -159,7 +159,7 @@ export function BenefitsSection() {
               <div className="flex flex-1 flex-col items-center justify-center px-5 text-center">
                 <p className="eyebrow">O2 Maxx</p>
                 <p className="mt-3 text-6xl font-black leading-none">{tier.price}</p>
-                <p className="mt-2 font-bold">mesačne · {tier.people}</p>
+                 <p className="mt-2 font-bold">mesačne · {tier.people}&nbsp;</p>
                 <div className="my-6 h-px w-16 bg-foreground/30" />
                 <p className="text-lg font-black">100 GB</p>
                 <p className="text-sm">+ všetko okolo</p>
@@ -232,8 +232,8 @@ export function TogetherSection() {
           <div>
             <h3 className="font-sans text-3xl font-black leading-none sm:text-6xl">Dajte sa dokopy.<br /><span className="text-brand-teal-deep">Plaťte menej.</span></h3>
             <p className="mt-4 max-w-xl text-base sm:text-lg">Čím viac vás je, tým výhodnejšie to je pre všetkých. Dajte sa dokopy s partiou a šetrite spolu.</p>
-            <div className="mt-7 flex items-end gap-4 border-b-2 border-foreground pb-5"><span className="text-5xl font-black text-brand-teal-deep sm:text-7xl">17,50 €</span><span className="pb-2 text-sm font-bold">/ osoba mesačne<br />pri 4+ ľuďoch</span></div>
-            <div className="mt-6 grid grid-cols-2 gap-x-5 gap-y-5 sm:grid-cols-4">{levels.map(([people, price, note]) => <div key={people} className="border-l-4 border-brand-yellow pl-3"><p className="text-2xl font-black">{people}×</p><p className="font-black text-brand-teal-deep">{price}</p><p className="mt-1 text-xs text-muted-foreground">{note}</p></div>)}</div>
+             <div className="mt-7 flex items-end gap-4 border-b-2 border-foreground pb-5"><span className="text-5xl font-black text-brand-teal-deep sm:text-7xl">17,50 €</span><span className="pb-2 text-sm font-bold">/ osoba mesačne<br />pri 4 ľuďoch</span></div>
+             <div className="mt-6 grid grid-cols-2 gap-x-5 gap-y-5 sm:grid-cols-4">{levels.map(([people, price, note]) => <div key={people} className="border-l-4 border-brand-yellow pl-3"><p className="text-2xl font-black">{people === "4+" ? "4" : people}×</p><p className="font-black text-brand-teal-deep">{price}</p><p className="mt-1 text-xs text-muted-foreground">{note}</p></div>)}</div>
           </div>
         </div>
       </div>
