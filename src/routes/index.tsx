@@ -58,28 +58,28 @@ function Index() {
     <main className="overflow-hidden bg-background pb-24 md:pb-0">
       <header id="pribeh" className="relative overflow-hidden bg-background">
         <div className="absolute -right-16 top-28 h-40 w-40 rounded-full border-[22px] border-brand-yellow sm:h-64 sm:w-64 sm:border-[30px]" aria-hidden="true" />
-        <div className="absolute -left-12 bottom-16 h-24 w-24 rotate-12 rounded-xl bg-brand-pink sm:h-36 sm:w-36" aria-hidden="true" />
-        <div className="relative mx-auto flex min-h-[96svh] max-w-6xl flex-col px-5 py-6 sm:px-8 sm:py-8">
+        <div className="absolute -left-12 bottom-16 h-24 w-24 rotate-12 rounded-xl border-4 border-brand-teal sm:h-36 sm:w-36" aria-hidden="true" />
+        <div className="relative mx-auto flex max-w-6xl flex-col px-5 py-6 sm:min-h-[96svh] sm:px-8 sm:py-8">
           <div className="relative z-10 flex items-center justify-between gap-3">
             <BrandMarkRow variant="card" />
             <PartnerLogo />
           </div>
 
-          <div className="relative z-10 my-auto grid items-center gap-8 py-8 lg:grid-cols-[1.08fr_.92fr] lg:py-12">
+          <div className="relative z-10 my-auto grid items-center gap-8 py-6 lg:grid-cols-[1.08fr_.92fr] lg:py-12">
             <div className="relative z-20">
-              <p className="eyebrow text-brand-pink">Nové partnerstvo · nový O2 Maxx</p>
-              <h1 className="mt-3 font-sans text-5xl font-black leading-[0.9] sm:text-7xl lg:text-8xl">O2 Maxx už od<br /><span className="text-brand-pink">17,50 €</span></h1>
+              <p className="eyebrow text-muted-foreground">Nové partnerstvo · nový O2 Maxx</p>
+              <h1 className="mt-3 font-sans text-4xl font-black leading-[0.95] sm:text-7xl lg:text-8xl">O2 Maxx už od<br /><span className="text-brand-isic">17,50 €</span></h1>
               <p className="mt-3 text-sm font-black uppercase">mesačne s O2 Spolu pri 4+ ľuďoch · samostatne 20 €</p>
-              <div className="mt-6 flex flex-wrap gap-2"><span className="offer-pill bg-brand-yellow">100 GB v 5G + prenos dát do ďalšieho mesiaca</span><span className="offer-pill bg-brand-teal">Neobmedzené volania a správy na Slovensku a v EÚ</span><span className="offer-pill bg-brand-orange">Netflix / HBO Max / Voyo a iné v cene paušálu na rok</span><span className="offer-pill border-2 border-brand-pink bg-background">Bez viazanosti</span></div>
+              <div className="mt-6 flex flex-wrap gap-2"><span className="offer-pill border-brand-yellow">100 GB v 5G + prenos dát do ďalšieho mesiaca</span><span className="offer-pill border-brand-teal">Neobmedzené volania a správy na Slovensku a v EÚ</span><span className="offer-pill border-brand-teal-deep">Netflix / HBO Max / Voyo a iné v cene paušálu na rok</span><span className="offer-pill border-brand-isic">Bez viazanosti</span></div>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
-                <Button variant="pink" size="xl" className="w-full sm:w-auto" asChild><a href={MAXX_LINK} target="_blank" rel="noopener noreferrer">Chcem O2 Maxx <ArrowUpRight /></a></Button>
+                <Button variant="ink" size="xl" className="w-full sm:w-auto" asChild><a href={MAXX_LINK} target="_blank" rel="noopener noreferrer">Chcem O2 Maxx <ArrowUpRight /></a></Button>
                 <Button variant="outline" size="xl" className="w-full sm:w-auto" asChild><a href="#benefity">Čo všetko získam <ArrowDown /></a></Button>
               </div>
             </div>
             <div className="mx-auto w-full max-w-md">
-              <p className="mb-3 rounded-lg bg-brand-yellow px-4 py-2 text-center text-base font-black sm:text-lg">Začni aj Ty nový školský rok na MAXXimum</p>
-              <div className="relative h-[360px] w-full sm:h-[520px] lg:h-[620px]">
-                <div className="absolute inset-x-8 bottom-0 top-12 rounded-t-full bg-brand-teal" />
+              <p className="mb-3 rounded-lg border-2 border-brand-yellow bg-background px-4 py-2 text-center text-sm font-black sm:text-lg">Začni aj Ty nový školský rok na MAXXimum</p>
+              <div className="relative h-[320px] w-full sm:h-[520px] lg:h-[620px]">
+                <div className="absolute inset-x-8 bottom-0 top-12 rounded-t-full bg-brand-teal-light" />
                 <img src={heroGirl.url} alt="Mladá držiteľka preukazu z kampane Ready for more" className="absolute inset-0 h-full w-full rounded-b-[4rem] object-cover object-top" fetchPriority="high" />
               </div>
             </div>
@@ -120,7 +120,7 @@ function Index() {
           </div>
           <div className="flex flex-col items-start gap-5 md:items-end">
             <PartnerLogo />
-            <Button variant="pink" size="lg" asChild><a href={MAXX_LINK} target="_blank" rel="noopener noreferrer">Chcem O2 Maxx <ArrowUpRight /></a></Button>
+            <Button variant="ink" size="lg" asChild><a href={MAXX_LINK} target="_blank" rel="noopener noreferrer">Chcem O2 Maxx <ArrowUpRight /></a></Button>
             <p className="text-xs">© 2026 CKM SYTS</p>
           </div>
         </div>

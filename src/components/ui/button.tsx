@@ -20,6 +20,8 @@ const buttonVariants = cva(
         yellow:
           "bg-brand-yellow text-foreground font-bold rounded-full shadow-soft-yellow hover:bg-brand-yellow/85",
         pink: "bg-brand-pink text-primary-foreground font-bold rounded-full shadow-soft-pink hover:bg-brand-pink-dark",
+        ink: "bg-foreground text-background font-bold rounded-full shadow-soft-teal hover:bg-brand-isic",
+        isic: "bg-brand-isic text-background font-bold rounded-full shadow-soft-teal hover:bg-brand-isic-dark",
         orange:
           "bg-brand-orange text-foreground font-bold rounded-full shadow-soft-orange hover:bg-brand-orange/85",
         white:

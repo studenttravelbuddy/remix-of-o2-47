@@ -28,7 +28,7 @@ export function CampaignFaq() {
   return (
     <section id="faq" className="scroll-mt-24 bg-background py-12 sm:py-20">
       <div className="mx-auto max-w-4xl px-5 sm:px-8">
-        <p className="eyebrow text-brand-pink">07 — FAQ</p>
+        <p className="eyebrow text-muted-foreground">FAQ</p>
         <h2 className="mt-2 font-display text-3xl font-black sm:text-5xl">
           Pýtaš sa?
           <br />
@@ -58,7 +58,7 @@ export function CampaignFaq() {
           Nenašiel/-la si odpoveď?{" "}
           <a
             href="mailto:info@ckm.sk"
-            className="font-bold text-foreground underline decoration-brand-pink decoration-2 underline-offset-4"
+            className="font-bold text-foreground underline decoration-brand-teal decoration-2 underline-offset-4"
           >
             Napíš nám
           </a>{" "}
