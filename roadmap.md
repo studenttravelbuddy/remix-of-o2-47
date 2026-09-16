@@ -7,9 +7,9 @@
 - [x] Pridať presne deväť mediálnych odkazov
 - [x] Nahradiť FAQ piatimi témami zo zadania
 - [x] Overiť obsah, odkazy, mobilné a desktopové zobrazenie
-- [ ] Zvýrazniť cenu 17,50 € s O2 Spolu v prvom obraze
-- [ ] Prestavať benefity okolo centrálneho mobilu
-- [ ] Použiť päť postáv z kampane v magazínovej koláži
-- [ ] Zmeniť O2 Spolu na vizuál s reálnymi ľuďmi
-- [ ] Zmeniť médiá na kompaktný horizontálny slider
-- [ ] Overiť nový dizajn na mobile a desktope
+- [x] Zvýrazniť cenu 17,50 € s O2 Spolu v prvom obraze
+- [x] Prestavať benefity okolo centrálneho mobilu
+- [x] Použiť päť postáv z kampane v magazínovej koláži
+- [x] Zmeniť O2 Spolu na vizuál s reálnymi ľuďmi
+- [x] Zmeniť médiá na kompaktný horizontálny slider
+- [x] Overiť nový dizajn na mobile a desktope

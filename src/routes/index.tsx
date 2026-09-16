@@ -72,6 +72,7 @@ function Index() {
               <p className="mt-3 text-sm font-black uppercase">mesačne s O2 Spolu pri 4+ ľuďoch · samostatne 20 €</p>
               <div className="mt-6 flex flex-wrap gap-2"><span className="offer-pill bg-brand-yellow">100 GB</span><span className="offer-pill bg-brand-teal">Neobmedzené volania a správy</span><span className="offer-pill bg-brand-orange">Predplatné na rok</span><span className="offer-pill border-2 border-brand-pink bg-background">Bez viazanosti</span></div>
               <p className="mt-6 max-w-2xl text-base leading-relaxed sm:text-lg">
+                1. septembra 2026 sme spustili novú spoluprácu s O2. Vznikla z jednej jednoduchej
                 myšlienky — že výhody, ktoré vám preukaz ISIC, ITIC alebo EURO&lt;26 prináša, majú
                 siahať aj tam, kde ste každý deň najviac — do vášho telefónu.
               </p>
